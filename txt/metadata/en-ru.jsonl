@@ -1,0 +1,998 @@
+{"domain": "canary", "docid": "canary"}
+{"domain": "news", "docid": "test-en-news_beverly_press.3585"}
+{"domain": "news", "docid": "test-en-news_beverly_press.3585"}
+{"domain": "news", "docid": "test-en-news_beverly_press.3585"}
+{"domain": "news", "docid": "test-en-news_beverly_press.3585"}
+{"domain": "news", "docid": "test-en-news_beverly_press.3585"}
+{"domain": "news", "docid": "test-en-news_brisbanetimes.com.au.228963"}
+{"domain": "news", "docid": "test-en-news_brisbanetimes.com.au.228963"}
+{"domain": "news", "docid": "test-en-news_brisbanetimes.com.au.228963"}
+{"domain": "news", "docid": "test-en-news_brisbanetimes.com.au.228963"}
+{"domain": "news", "docid": "test-en-news_brisbanetimes.com.au.228963"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_csmonitor.com.7750"}
+{"domain": "news", "docid": "test-en-news_economist.14223"}
+{"domain": "news", "docid": "test-en-news_economist.14223"}
+{"domain": "news", "docid": "test-en-news_economist.14223"}
+{"domain": "news", "docid": "test-en-news_economist.14223"}
+{"domain": "news", "docid": "test-en-news_economist.14223"}
+{"domain": "news", "docid": "test-en-news_economist.14223"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_euronews-en.43091"}
+{"domain": "news", "docid": "test-en-news_newsrepublic.com.6817"}
+{"domain": "news", "docid": "test-en-news_newsrepublic.com.6817"}
+{"domain": "news", "docid": "test-en-news_newsrepublic.com.6817"}
+{"domain": "news", "docid": "test-en-news_newsrepublic.com.6817"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_newsweek.63908"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_pa.52742"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_rt.com.54499"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87445"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87448"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87458"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87462"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_scotsman.87519"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.799809"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_seattle_times.800119"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "news", "docid": "test-en-news_ventures_africa-ar.1773"}
+{"domain": "social", "docid": "test-en-social_111975537143453440"}
+{"domain": "social", "docid": "test-en-social_111975537143453440"}
+{"domain": "social", "docid": "test-en-social_111975537143453440"}
+{"domain": "social", "docid": "test-en-social_111975537143453440"}
+{"domain": "social", "docid": "test-en-social_111975537143453440"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111975617901079872"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976217731399552"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111976249663909024"}
+{"domain": "social", "docid": "test-en-social_111977447547284544"}
+{"domain": "social", "docid": "test-en-social_111977447547284544"}
+{"domain": "social", "docid": "test-en-social_111977447547284544"}
+{"domain": "social", "docid": "test-en-social_111977447547284544"}
+{"domain": "social", "docid": "test-en-social_111977447547284544"}
+{"domain": "social", "docid": "test-en-social_111977447547284544"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977470885664240"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977498791056432"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_111977766001055104"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112106953594747568"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107496062298544"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107889726289648"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112107918929771488"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109186993725712"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112109432154590752"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112110250600185424"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111193384667328"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111346044907536"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112111385848391872"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112271633685072"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112112980319428992"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112121157211696272"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112122127346453600"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112130344809706592"}
+{"domain": "social", "docid": "test-en-social_112132847725764752"}
+{"domain": "social", "docid": "test-en-social_112132847725764752"}
+{"domain": "social", "docid": "test-en-social_112132847725764752"}
+{"domain": "social", "docid": "test-en-social_112132847725764752"}
+{"domain": "social", "docid": "test-en-social_112132847725764752"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112140958167999904"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112152593528184304"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112166537145572640"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112198063182209776"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112201850099412432"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112226149509052560"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112259676538889296"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112270350852000848"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112289379466442912"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "social", "docid": "test-en-social_112294019357219888"}
+{"domain": "speech", "docid": "test-en-speech_--4KfTiO-n0_000", "clean_source": "Okay, the next video will get roofing contractors mad at me, but it's not for them. It's for you. If you are that person that cannot afford a roofing contractor, then you have to watch this video. This will show you how you can do a cover over an existing old roof yourself. And it's very simple. It's a peel and stick system."}
+{"domain": "speech", "docid": "test-en-speech_--Dq6kFSRDE_004", "clean_source": "Cheers, y'all. Now check it out. I really didn't even eat enough to be wiping my mouth, but I can tell you this, my mouth is salivating though. You know what I mean? So look, this is what I'm fixin' to do. You guys let me know down in the comment section below, what would you do? What type of veggie would you serve this with? And don't forget, this is a budget-friendly meal, alright? So let me just go ahead and pour myself a glass of this grape Kool-Aid. Yes, sir."}
+{"domain": "speech", "docid": "test-en-speech_--sV9RHC1_4_000", "clean_source": "Welcome to Cosa, in Italy. Cosa is believed to be an ancient Roman settlement. The site was excavated at least four times over the last century. What is there to excavate if Cosa is originally a Roman site? Was the Pantheon in Rome excavated? No, the Pantheon is even at the same ground level as the surrounding, contemporary buildings. And why is that? Because the Pantheon was probably built during the Roman era. It is also almost cardinally oriented, which indicates that it cannot be very ancient."}
+{"domain": "speech", "docid": "test-en-speech_-0KrV5WsZq8_000", "clean_source": "Venice, city on the water. A place of beauty and romance that attracts millions of visitors every year. Just a few steps from the well-trodden tourist routes, there's a very different Venice, one populated by fascinating creatures. This film explores a Venice that few people ever see, a city that has a surprising double life."}
+{"domain": "speech", "docid": "test-en-speech_-IPJfZjzCZQ_000", "clean_source": "We're not ready. And it's going to be more dangerous out there because you fired Greg. Because we don't have any money to pay him, Burt. You're doing this, not me. The hell I am. Do you not understand what I had to do to get these kids out here? The bond that I had to put up for the insurance company, you want to lose all that? Rather than risk hurting one of the kids? Yeah. Why? Never bothered you before."}
+{"domain": "speech", "docid": "test-en-speech_-_31PoDRu28_001", "clean_source": "Now I need to quickly mention the reactor's name, as it was considered a zero power installation. You see, a zero power nuclear reactor is capable of sustaining a stable fission chain reaction, with no significant increase or decline in the reaction rate. This type of installation is essential to gain practical experience of reactor operation, but can still be deadly if the delicate balance isn't maintained."}
+{"domain": "speech", "docid": "test-en-speech_-lTZQChhvsY_002", "clean_source": "This is a super, super easy project, surprisingly. Like, it's not hard to match things up. So that's the nice thing about this project. Okay, so that's down, right? So now I'm going to start this way. I'm just going to run the glue all the way around and do one side at a time. So here we go. I'm running it right above the tin, the rin... the rim tin. Jeez. So I'm just going to take this and move it along."}
+{"domain": "speech", "docid": "test-en-speech_-uigLE6EI1g_000", "clean_source": "This is an authentic and real old footage of a true certain giant individual from Japan, walking in some military parade. What's shocking about it is his actual size. He has a stature of at least 4 meters high, which is minimum 13 in feet. Thus, he is genuinely taller and more massive than each and every other original NBA player, for example, like Shaquille O'Neal, or"}
+{"domain": "speech", "docid": "test-en-speech_00lv1G1uW8M_004", "clean_source": "I encourage them to challenge their teachers even when they, when they think the teacher is wrong about something. I think that it's a good thing for people to go out there and not just accept everything as it is. Right. Yeah. So that kind of independence--. You famously, as a Congressman, explained all of your votes on Facebook, which is a rare concession by authority, to say, \"Okay, this is why I did what I did.\" Yeah, and actually, you know, a lot of the people in leadership and in Congress didn't like that I was doing that, because I was giving people at home the power to challenge them. Yeah."}
+{"domain": "speech", "docid": "test-en-speech_07FOJFFqOYc_002", "clean_source": "The question is, like countless other claimed Neolithic ruins, how did they achieve such feats? How did they lift such enormous stones? Were they, like we have posited many times before, the remnants of a once-advanced-yet-destroyed ancient civilization? We find such possibilities, in particular, the men here of Agra, highly compelling."}
+{"domain": "speech", "docid": "test-en-speech_0EJ9bV6IAnM_000", "clean_source": "So, I bought an Xbox Series X so that you don't have to. Or maybe you actually have to. In this video, I'm going to tell you all the pros and cons of choosing an Xbox Series X. I'm also going to go over the actual hardware, the controller, the games, just about everything that is my experience so far with the Xbox Series X. So I hope you will enjoy this video, and maybe even find it useful."}
+{"domain": "speech", "docid": "test-en-speech_0ZEBNpiuMu4_004", "clean_source": "I'm sure marine dinosaurs still exist. My apologies for intruding upon your thoughts, mademoiselle. But strictly speaking, only reptiles that walked on dry land are called dinosaurs. If they lived under the water, they are called marine reptiles, and they all disappeared a very, very long time ago. What happened? You'll see, Julie."}
+{"domain": "speech", "docid": "test-en-speech_0imglSyYL1Q_002", "clean_source": "So once all that is done, I wipe away all the excess powder with a little bit of alcohol and a paper towel. Super easy to clean. And then I apply my cuticle oil. This is actually face oil from Truly, but I didn't like how it was so sensey. I didn't want to put it on my face, so I use it as cuticle oil. And this is the final product of my nails. I love them and I'm obsessed. A couple of frequently asked questions: How long does my nail set last? I usually leave my nails on for two weeks. Sometimes I take them off early because y'all know I do my own hair, and I gotta have my nubs when I do my hair, because it's easy to grip."}
+{"domain": "speech", "docid": "test-en-speech_0mytlKOHr74_006", "clean_source": "Knight of the Galactic Railroad by Kenji Miyazawa. This is a Japanese story of two young boys who embark on a mystical journey on a celestial train, going through the galaxy, encountering various allegorical experiences and deep philosophical themes. As they navigate the night sky, the story reflects on life, death, and the human condition, leaving readers with a profound exploration of existence and the universe. The novel was adapted into a manga in 1983 and an anime in 1985."}
+{"domain": "speech", "docid": "test-en-speech_0uduQk_8c1s_002", "clean_source": "Where I'm standing would have been the bottom of the Western Interior Sea, about 85 million years ago. Mike Everhart is one of the world's leading experts on Mosasaurs. The horizon would have been ocean for as far as you could see, that the seaway stretched for hundreds of miles from where we're standing. At this time, the climate is warmer, so there are no polar ice caps."}
+{"domain": "speech", "docid": "test-en-speech_1CWvFkncljw_003", "clean_source": "All right, whoa, whoa, whoa, whoa, hold it down to a small riot, would you? Daddy, when are we going to be able to afford a larger car? When you're about 10 years older and can marry a millionaire. I had more room when I was in my baby buggy. Yeah, and I haven't finished paying for that either. In fact, I still owe two more payments to the hospital before I own you."}
+{"domain": "speech", "docid": "test-en-speech_1R3j_apcikw_000", "clean_source": "Today we're going to talk about Ben Affleck defending an interview. Greg, why don't you to tell us about the video we're going to watch. Yeah, so a couple of weeks ago, Ben Affleck went on a two-hour interview with Howard Stern. He talked about his breakup with his ex-wife and family, and he had some fallout from it, so here we go. Here he is, Ben Affleck!"}
+{"domain": "speech", "docid": "test-en-speech_1SSA_hwpBg8_011", "clean_source": "Now, I need to let y'all know, I've never done this before, but I'm going to do it now. Skinpotion is handcrafted with organic and all natural ingredients that deeply moisturize and illuminate the skin. Veil of Venus is the newest addition to the Skinpotion family. It is available right now for pre-order. And you can follow Skinpotion on Instagram @skinpotionus. That's s-k-i-n-p-o-t-i-o-n-u-s, skinpotionus."}
+{"domain": "speech", "docid": "test-en-speech_1SqhIFgluMw_001", "clean_source": "So, I have been working with music for over 20 years, and released two albums during that time, and touring around Germany and Poland, and Sweden, of course. So you've always been a performer from a very young age? Yeah, I have. And is there any iconic places that you performed at when you were younger?"}
+{"domain": "speech", "docid": "test-en-speech_1qGqMbMvnqY_001", "clean_source": "And now you see that whatever happens backstage, it doesn't matter because the show will go on. And I got a comment from Lovely Lych that she really liked the video. And she writes, \"I liked the behind-the-scenes things, like traveling to the festival, the atmosphere there, the food and stuff. A day in your life, so to speak.\" So I hope you liked this video and we'll show you as much as possible. So now it's time for lunch, and Deep is making some scrambled eggs. And the trick here is to add an extra egg yolk to it."}
+{"domain": "speech", "docid": "test-en-speech_2597xLWyKF0_001", "clean_source": "The enemy of my enemy is my friend. Disagree! If the enemy of your enemy were your friend, he'd explicitly be your friend. You know, oftentimes people can work together for a time, united by their dislike for something or someone. But if that relationship was conceived by your mutual dislike for whatever that thing is, what's to stop that relationship from dissolving or becoming hostile after that thing is taken care of? Like, the foundation of a friendship is much more stable than that. But, you know, I also understand the short-term strategy behind it, so I'll just disagree."}
+{"domain": "speech", "docid": "test-en-speech_2Uo5zKrbips_001", "clean_source": "A long time ago, their parents were killed by poachers, and Cheyenne and Kuyu were sold at the market. Taken in by the Help Congo organization, they grew up in semi-captivity with about 30 other orphans out on the islands. One after another, these young chimpanzees have been shown the way back to the forest. The association's scientists have given them each a name to identify them."}
+{"domain": "speech", "docid": "test-en-speech_2omlZQaheWE_000", "clean_source": "And because of that, you cannot trust any media outlet to report on the news fairly or accurately. Now that being said, I still think there's some value to the mainstream media. Just because they are exaggerated and biased, doesn't mean they can't be trusted at all. There's still a lot of useful information you can gather from these sources. You just have to know how to analyze them properly. The same is not necessarily true for the alternative media, the smaller companies or even individuals who talk about the news on sites like YouTube and Facebook."}
+{"domain": "speech", "docid": "test-en-speech_2ydbIXw68nA_000", "clean_source": "And when you download it, it should be a pretty quick, small file size. You're going to get an app that looks just like this, all right? So I could click on that right now. And this is the view that you're going to see right away here. And so, I'll talk about a few things with the lab. Now, one thing to note is that the lab instructions for the lab worksheet that you're going to work on are pretty self explanatory. So really, the purpose of this video is to show you how to use the app itself."}
+{"domain": "speech", "docid": "test-en-speech_33gJqN796Eo_000", "clean_source": "Well, it still sounds better than Pink Floyd. So in Manic Miner, you collect all the items on the screen and head to the goal. And you gotta do it before you run out of air or hit something. Hit what exactly? Weeds! You can die from touching grass. It sounds like half my fanbase. And did you notice I died from touching a weed that was on a completely different platform? I just went through the platform and then hit the weed. That's good game design, man. And then there's this asshole over here who's going rrrrr!"}
+{"domain": "speech", "docid": "test-en-speech_36UVjSUk-wY_035", "clean_source": "Alexa, play It's My Party and I'll Cry if I Want To. Bo, Bo, we gotta spin around. Alexa, play It's My Party and I'll Cry if I Want To. You'd cry too if it happened to you. Woo! Alexa, play Midnight Train!"}
+{"domain": "speech", "docid": "test-en-speech_392RoIzR2Fs_001", "clean_source": "Hi, Rob. Hi, Marion, how are you? I am very well. Why are you dressed as a security guard, Rob? Management have asked me to create a new healthcare security news section and buyer's guide and I thought a costume may help me get into character. Oh, I see. Yes, well, maybe it will, Rob. We have a news section now that looks at the issues and opportunities surrounding data security and network security and healthcare."}
+{"domain": "speech", "docid": "test-en-speech_3F3YFF8z714_000", "clean_source": "Hello, it's Bahiano with Bahiano Reno. Yeah, we're going to repair some grout. The tiles looks to be about 14, 15 years old. We're going to do it just to stabilize the tiles, because the way it is, the tiles looks good. It's just loosening up in some areas. We don't want to replace the whole tile, the whole grout. We're just going to do some repair to last until we are ready to do a full renovation. Yes, is this recording?"}
+{"domain": "speech", "docid": "test-en-speech_3MTATdXzFC4_009", "clean_source": "So my dad can't give me rides to work. And for me, work is about 27 miles away. So there and back would be nearly a $100 a day with Uber. I haven't looked at Lyft. I could have, I guess, that makes sense. But I didn't have rental on my auto insurance, so that's my fault. So I guess I could have tried to do that and get that set up and tried to get a rental while I was down and out of a car. But even then, a rental wouldn't cover seven days. I'm going to sneeze, hold on. That sneeze sucked."}
+{"domain": "speech", "docid": "test-en-speech_3M_AGbXVb5s_000", "clean_source": "Now, talking about stars, Howard Jones appears as a special guest vocalist in a duet with you on the album, on the track, I Made a Case, who has offered you so much encouragement with your music. Was it by chance that he happened to appear on the track? As I hear you had to strip back the track, as didn't want anything being in the way of your voices telling the story."}
+{"domain": "speech", "docid": "test-en-speech_3S7FkKvesu8_000", "clean_source": "Water, the liquid that oceans are made of. And it fills endless depths. Only a few will venture out into the endless open ocean of this vast underwater world. Most of the ocean inhabitants live in the city, as it were, like human societies."}
+{"domain": "speech", "docid": "test-en-speech_3hGlnmof_F8_003", "clean_source": "Well, you'd only have the law on you, and bring it back, and then things would be worse than ever. Maybe so. It just ain't no sense in livin'. We ain't got a chance. Why, Chris, what a thing to say. We've all got a chance. The world's full of beautiful things. Not for us, swampers. Yes siree, for all of us."}
+{"domain": "speech", "docid": "test-en-speech_3u-ImON16rs_000", "clean_source": "Hey Psych2Goers, and welcome back to our channel. Thank you so much for all the love you've given us. Your ongoing support has helped us make psychology and mental health more accessible to everyone. Now let's continue. We've all done something self-destructive at some point in our lives. Most of the time, it's not intentional and doesn't become a habit. Self-destructive behaviors are those that are bound to harm you physically or mentally. It may be unintentional, or you may know exactly what you're doing, but the urge is too strong to control. Problems can eventually arise when this type of behavior becomes habitual. So, here are seven common behaviors of a self-destructive person."}
+{"domain": "speech", "docid": "test-en-speech_4EXYb1KXvzM_002", "clean_source": "Starfire. The princess of Tamaran. Comfortable, I hope. Lord Bagrok! Oh! Such a formidable spirit. Your sister was wise to hand you over. Garbler neck!"}
+{"domain": "speech", "docid": "test-en-speech_4cfsI4ZjTbU_001", "clean_source": "We must recognize that the government of the People's Republic of China and the government of the United States have had great differences. We will have differences in the future. But what we must do is to find a way to see that we can have differences without being enemies in war."}
+{"domain": "speech", "docid": "test-en-speech_5969NouFGfs_002", "clean_source": "How did you very early on, considered or realized that, well, engineering is just part of the challenge? Especially that we're taught as engineers that we're dealing with issues, right? And we're finding solutions. That's our job. Sure, sure. How did you came across that so early on? Well, it was a strange coincidence, so to speak. Of course, I grew up in the 1970s. I gained my political consciousness, as well as my academic understanding in the 1970s, and that context matters, of course, massively."}
+{"domain": "speech", "docid": "test-en-speech_5Ohwuu0GuMA_000", "clean_source": "South Wales four-piece The Now are proud to release their debut album, Too Hot To Handle, via True Music, and Callum joins me now. How are you doing, Callum? How's it going? Yeah, all good. Good, yourself? Yes, I'm very good. Thank you. It's a privilege to speak to yourselves because I've been listening to your music quite a lot since 2023. So I'm just loving the music, and I think it's something that we definitely need in the charts these days."}
+{"domain": "speech", "docid": "test-en-speech_5TqcJCKl34g_000", "clean_source": "So, when did you first start writing and performing music after having your stage in front of your grandparents there? Well, basically, more performing. I did a bit of writing, but I left it to professionals, you know, when I was recording with professional writers and big, big hits around the world."}
+{"domain": "speech", "docid": "test-en-speech_5jn6pLG9P7k_000", "clean_source": "Proper handling and disposal of waste at your auto repair facility is important for employee health, but also to avoid fines or significant legal settlements. Also, customers want to do business with companies that make an effort to proactively protect the environment and operate in a sustainable way. So what are seven ways you can do this? Number one: re-refining used oil. Don't just discard your old oil. With the right processes, oil can be fully re-refined and reused indefinitely without any reduction in quality."}
+{"domain": "speech", "docid": "test-en-speech_5mzS5ZJPAsM_007", "clean_source": "Check. Check. Rock defeats scissors, scissor defeats paper, and paper defeats rock. You win. The loser will lose one star. At the end of each game, the referee will put the cards back into the recycling box. Of course, if both players choose the same card, the game is tied, and no one will lose a star."}
+{"domain": "speech", "docid": "test-en-speech_5t6wu7zIFBg_000", "clean_source": "Hello, this is Nick from Review Outlaw. So, what we're going to do today is do a final walk-through of the cabin we finished up. Pretty much getting to the end. This is the first room you walked into before. As you can see, we finished that ceiling, got the walls, all sheetrock painted. This little border across here. Got alarm system in."}
+{"domain": "speech", "docid": "test-en-speech_638jXo5Gh2E_000", "clean_source": "Hello, World PDR coming at you here with a 2018 brand new Yukon Denali. It's got a little dent right here in the back quarter. I've got it not super warm. I've got it 95. That's maybe a little too warm. I'm gonna turn this down. We're just going to do a quick little glue pull. I've got the glue all hot and ready. Can you guys see where that dent is? I'm just going to drop it right in there and then maybe even remove the heat."}
+{"domain": "speech", "docid": "test-en-speech_64yy78jMNcM_000", "clean_source": "Take a close look at this bolt. It has some surface rust on it, but it's still useful. We're going to show you how we managed to play ordinary hardware with a zinc finish. If you always have the materials on hand at home, you can save yourself a little money and a trip to the hardware store whenever you need zinc-plated hardware. We're going to show you everything you need to have on hand to zinc plate and weatherproof this bolt."}
+{"domain": "speech", "docid": "test-en-speech_6D9Z7antjMw_002", "clean_source": "And he said, \"You have a tattoo.\" And I said, \"I have a few.\" But, \"On your hand.\" I have a banjo, and I told him about it. It was a friend of mine, Darryl Adams. And it's a banjo. Do you have it? Oh yeah, there's a banjo right there on your hand. Can we see it? Look, there's a banjo. It's the kind of tattoo you should really get on your knee, you know? Yeah, yeah. Or, or... A banjo on my knee, kind of thing. Oh, a banjo on my knee! Yeah. Yeah!"}
+{"domain": "speech", "docid": "test-en-speech_6JeSS_CODZ0_000", "clean_source": "Here's the full story of Danny and Sam. Ready? Ready. Danny Fenton and Sam Manson are best friends, and along with Tucker, they spend pretty much all their time together. Sam's the reason Danny has ghost powers in the first place. Come on, Danny, a ghost zone? You gotta check it out. You know what? You're right."}
+{"domain": "speech", "docid": "test-en-speech_6RjTvN2QhSY_000", "clean_source": "Nearby, Basil was awoken by an emergency alert as a foul smelling gas cloud from the blaze was spread across the area. Locals were told not to leave their homes and to close all windows and doors, although this alert was lifted around 7 AM when the smoke was thought to be non-fatal. It wouldn't be the air so much as the water that would be heavily polluted, and it would be the very water used to douse the flames that would cause the disaster. The highly toxic mercury compounds were present as fungicides in sea dressings in the warehouse, and were marked with fluorescent red dye Rhodamine B."}
+{"domain": "speech", "docid": "test-en-speech_6YeLsSSPNLQ_000", "clean_source": "Crime fighters' log 1.2747. Jump City is a cesspool. I can't bring justice to the streets alone. I need a sidekick, preferably several sidekicks. I'll call them teammates to be polite, but everyone will know their sidekicks. Networking apps. Welcome, RobDog_747. Let's put together a team. Team assemble mode. Not older than me."}
+{"domain": "speech", "docid": "test-en-speech_6ji3tqZUynY_001", "clean_source": "Kim Jong-il said to the officials, \"I shared a great leader's motor, served the working masses, and let flowers bloom even on a rock, if this is the people's desire. This is my alpha and omega. This idea has been embedded in every aspect of the people's living in the solution of traffic problem for one thing.\""}
+{"domain": "speech", "docid": "test-en-speech_7MQ3Yx2h3Rg_000", "clean_source": "First of all, what we're going to do is just mix this paint up. It mixes one to one with a reducer. And we just mix it up like we normally would painting anything. So I have two ounces of paint here, so I'm going to put two ounces of reducer. We're going to stir it up. Now it's ready to put in the gun and spray."}
+{"domain": "speech", "docid": "test-en-speech_8HgZcwSmM0c_000", "clean_source": "This is aluminum. Aluminum for our industries and aluminum for our homes. Aluminum for building, for transportation, for communication, for agriculture, and for national defense. What is it that has made aluminum, one of the youngest members in the family of metals, such an outstanding material? The answer lies in its amazing versatility and unusual combination of properties: Its smart, modern appearance in a variety of natural or colored finishes. Its great strength, combined with extreme light weight--an outstanding advantage in almost every metal application."}
+{"domain": "speech", "docid": "test-en-speech_8bbVFeTIIg8_000", "clean_source": "Initial applications to Harvard for a psychology master's were rejected, but was eventually admitted. The initial setbacks were due to Milgram not taking any undergraduate courses in psychology at Queens College. In 1961, Milgram received a PhD in social psychology. He became an assistant professor at Yale around the same time."}
+{"domain": "speech", "docid": "test-en-speech_9GhGiB4KhTM_004", "clean_source": "I didn't say that. You don't have to. You know better than anyone that violence begets violence every time. The Council made the decision. The Council is gone! We spend our entire lives, entire millennia devoted to protecting life."}
+{"domain": "speech", "docid": "test-en-speech_9s2UyGBuvYw_003", "clean_source": "And there's just something that evokes a serious sense of awe. And that's what I want to try to convey to you guys tonight. So I hope you're ready for a nice relaxing journey through some of the deeper history of ancient Egypt."}
+{"domain": "speech", "docid": "test-en-speech_9xy_fiA1gRo_001", "clean_source": "If you're going to use tar to seal, it'll crack. Let me show you. I'm removing the silicon, which is one of the no-nos--the silicon sealer. But then, somebody put tar here and they painted over the tar. Let me show you. What did that do? It's just a filler."}
+{"domain": "speech", "docid": "test-en-speech_A9OuD5Ja5Uo_002", "clean_source": "For a man, I feel more sorry for him than her, somehow. There's nothing can be done about it. Their daughter's had another sinking spell. The hospital doesn't think she'll last the day. It must be unbearable. I've never lost anyone. She'll get over it. Oh, I'm sorry, Mrs. Leslie. Oh, that's all right, Miss Rone. You get over it. Eventually."}
+{"domain": "speech", "docid": "test-en-speech_AC2UOuvVol8_000", "clean_source": "It's 6:03 right now on this Wednesday morning, and we are following a tragic story this morning. A teenager is dead after police found her body in an eastside ditch. The gruesome discovery was made hours after her parents reported her missing, saying she had left on a walk last night. News 4's Tawny Davis is live this morning with more on the circumstances that may have led to her death and the police investigation. Good morning, Tawny."}
+{"domain": "speech", "docid": "test-en-speech_Aevb1Pl1iic_007", "clean_source": "It's been months, and I feel like I'm still standing there at his grave. I can't leave him. He's gone, and I still can't leave him. I see him in every uniformed soldier I pass, and they're everywhere since the bombing."}
+{"domain": "speech", "docid": "test-en-speech_Amf0UGzO31M_005", "clean_source": "Okay, I died. There was some lag there when I was panning. Yeah, that's what made me miss the shot. My ping is fine. Anyways. Yeah, you can see what I mean by the frame rate. That's what I really don't like about this device. It can't keep up with the game, basically. So when I was shooting him, basically I was shooting at all the wrong places, not because of my ping, but it's because of the phone graphics lagging, basically. All right, so let's head over to COD"}
+{"domain": "speech", "docid": "test-en-speech_B9abU6r80P4_003", "clean_source": "What did you get? Like, how did it apply to your own life? Well, at the end of the day, they all ask God for forgiveness. All of them. So when you're reading all these books about all these conquerors, when you're a young man and you're on your way to becoming the youngest ever heavyweight champion, and you're trying to take on the mindset of the conquerors, and you find out they all ask God for forgiveness-- Yeah. --how did that affect you? That was pretty cool, because by that, I learned greatness was the willingness to die."}
+{"domain": "speech", "docid": "test-en-speech_BAvkbiKnFEY_000", "clean_source": "Hello, everyone! If you don't know me, my name is Janica, and I am an expert from Finland, living in the Netherlands. Welcome to this vlog. Today we are in the city of Haarlem. Harlem is a really lovely city located in the province of North Holland."}
+{"domain": "speech", "docid": "test-en-speech_BTIfGFJqLko_005", "clean_source": "I know that a lot of you have been having some fun with my advancing years. You've even tied my recent surgery to my age. Well, I got to be honest with you. I had that same operation when I was young, and it felt so good, I wanted to have it done again before I was too old. But I am aware of my age. When I go in for a physical, now they no longer ask me how old I am. They just carbon date me."}
+{"domain": "speech", "docid": "test-en-speech_BmgU6BTfNQM_001", "clean_source": "Battery is good. Now we can see this IC is dislocated from the PCB. We can see the condition of this IC. Now this track is coming here. This track is damaged."}
+{"domain": "speech", "docid": "test-en-speech_Fhach-AU5Ko_020", "clean_source": "With his general-purpose military markings, the Guinean puffer fish doesn't mind being seen. The Atlantic lizardfish doesn't bother with disguises at all. It simply shimmies into the sand. This may fool both its prey and its predators. But it won't fool the puffer fish patrol."}
+{"domain": "speech", "docid": "test-en-speech_Ft41IG2BAG8_001", "clean_source": "I like to wear gloves, just because stainless edges are usually pretty sharp, like a razor, so you don't want to cut yourself up while you're trying to straighten it. I like to use the table as a dolly a lot of the time. They do also offer specialty trim, or jeweler's hammers is what they're sometimes called. Also trim anvils. But in this case, since it's a large flat piece, I'm just going to go ahead and use my stand-alone auto body hammer."}
+{"domain": "speech", "docid": "test-en-speech_JJXzBWhdVuA_000", "clean_source": "Today we're making some beautiful vintage Easter crafts. Keep watching! I'm Brandy, and this is Making It My Own DIYs. Welcome! The first project are going to be two Easter ornaments. I'm going to start off with two little ornaments here, and you can use whatever you have on hand. I've got these little decor eggs from Dollar Tree."}
+{"domain": "speech", "docid": "test-en-speech_JTpvaw6ywbE_000", "clean_source": "The king, Lalibela, is said to have traveled the 1,600 miles to Jerusalem. Legend has it, when he returned and Jerusalem fell to the Islamic conquest, Lalibela ordered a new home for Christianity. Each church was carved from a single piece of rock to symbolize spirituality and humility. The Christian faith inspired many features receiving Biblical names. Even Lalibela's river is known as the River Jordan. Lalibela remained the capital of Ethiopia from the late-12th into the 13th century."}
+{"domain": "speech", "docid": "test-en-speech_JbE_J9AlrSw_000", "clean_source": "On Mars, which is a planet half the size of the Earth. There was a lot of water on Mars a long time ago. To do that kind... There's a volcano on Mars, 81,000 feet tall--almost three times taller than Everest. So, like, what's happened over the great span of time is more than really my imagination can grasp. So anyhow, first water. First life: 3.7 billion years, we'll just say life. So, you know, pretty, pretty early in the, you know, early evolution of"}
+{"domain": "speech", "docid": "test-en-speech_L7_fgdw4kwY_000", "clean_source": "Transeuropa Festival is a biannual, cultural, political, and artistic event/forum/conference that brings together quite a lot of different formats. We've been doing this now as European Alternative, the organization behind this, for 10 years. So we have quite a bit of experience. At the same time, it's an event that is nomadic, so it always takes place in a different city. The last time, two years ago, we were in Belgrade, so in a city outside of the European Union. This year, in 2017, we wanted to come to Madrid for quite a lot of different reasons."}
+{"domain": "speech", "docid": "test-en-speech_LEFq4Nu-FhE_000", "clean_source": "The Islamic Movement in Nigeria has described the freedom granted its leader El-Zakzaky and his wife as victory over persecution by President Muhammadu Buhari and Governor Nasiru El-Rufai of Kaduna State. The group also says the ruling has vindicated its leader and members of the group. Hello. Hope you enjoyed the news. Please do subscribe to our YouTube channel and don't forget to hit the notification button so you get notified about fresh news updates."}
+{"domain": "speech", "docid": "test-en-speech_Lcdy6X5kMTs_000", "clean_source": "Hey, everybody, this is TS Madison. And if you are trying to grow your business, brand, or a product, why not advertise with me? Email me at booktsmadison@gmail.com so that you can get in on our comprehensive advertisement packages. Unique visits, unique subscribers, honey, a broad demographic. Advertise with me today."}
+{"domain": "speech", "docid": "test-en-speech_MBJ0dL68I_I_000", "clean_source": "The documentary film you are about to see was shown to Mr. Alexander Kerensky, President of the Democratic Provisional Government of Russia overthrown by the Communists in 1917. Mr. Kerensky consented to make a few introductory remarks about our picture. We present 80-year-old Alexander Kerensky in his New York City apartment on October 10th, 1962."}
+{"domain": "speech", "docid": "test-en-speech_MG7hk2npXN0_005", "clean_source": "Your Honor, my client accepts the jury as presently constituted. The jury is satisfactory to both sides? We accept the jury. The jury is satisfactory to us. Swear the jury."}
+{"domain": "speech", "docid": "test-en-speech_MbW7DvLZ9Lg_005", "clean_source": "Kid Durango of Arizona: The Dust Devils. The layer of dew that covered the prairie disappeared quickly as the sun rose over the foothills. The moon hung around for a while, and then sunk far below the ranges. The day began like a thousand other Arizona days. That was, until the cloud came."}
+{"domain": "speech", "docid": "test-en-speech_N2KNk5qq1H8_000", "clean_source": "And I have a lot of experience. I've worked internationally. I've worked this continent. I've worked different states, different market segments. And what I found is people are really intrigued by that. They want to know kind of what the behind the scenes is. So some of these videos are going to be tips from somebody that actually works in this industry, and I think that's what separates me a little bit from possibly other travel bloggers that you might follow. You know, I may not have worked for, say, even the cruise industry, but I had to take courses in it for my hospitality degree. So, even if I haven't worked in it, I've been educated on it."}
+{"domain": "speech", "docid": "test-en-speech_NEEXiMgmA74_000", "clean_source": "You're a jerk, Tom. Look, Celia, we have to follow our passions. You have your robotics and I just want to be awesome in space. Why don't you just admit that you're freaked out by my robot hand? I'm not freaked out by, it's... All right, fine. I'm freaked out. I'm having nightmares that I'm being chased by this giant, robotic claw. Oh, whatever, Tom!"}
+{"domain": "speech", "docid": "test-en-speech_O0ORxKse1s8_088", "clean_source": "Hello. How about that Albany call? Busy? Well call the chief operator, tell her to keep the line open. Official business. It's a matter of life and death. I hope you are telling me the truth, Miss Kennedy. It won't go well with you if you're not. I tell you every word I told you's the truth. Dirken grabbed me. He tore my dress. We struggled."}
+{"domain": "speech", "docid": "test-en-speech_OAaig_rKS5g_000", "clean_source": "Okay, so this final repair is spine repair. Spine repair, it's a little bit more complicated. There are more steps to it, but if you follow along with me, I think you can easily do it. So what I'm going to do first for the spine repair is I need to remove this old spine. So, hopefully I can save this label and I can reattach it to the new material that we put over the spine. That way I don't have to worry about creating a paper label or going without a label. So I'll cut this part off first and I'll show you how to clean that up later."}
+{"domain": "speech", "docid": "test-en-speech_OExU5AL7RMM_000", "clean_source": "Welcome. Welcome, everyone. I'm just going to make sure that all of this is working. It just takes a minute. So I came on a bit early just to make sure. Just washed my hands and getting ready to go. So I'm just finishing setting up. I think we're good. I'm going to make mistakes. I can feel it. It's one of those days. So I'll just wait till people get on, and then we'll get started."}
+{"domain": "speech", "docid": "test-en-speech_OPV8Gf1FFn8_021", "clean_source": "Mom says you don't want to visit us. She says that? Yeah. Everybody's got a story, son. I guess that's hers. Life's funny that way, you know?"}
+{"domain": "speech", "docid": "test-en-speech_ORZdsMICbUM_000", "clean_source": "More than 4.5 billion years ago, the Milky Way Galaxy collided with a nearby dwarf galaxy. This encounter hastened the formation of stars. Our solar system is a part of the Milky Way Galaxy. Within the solar system, material circulation had been progressing."}
+{"domain": "speech", "docid": "test-en-speech_OtKhIhSgy78_001", "clean_source": "Oh my God. You guys, listen, I'm so excited because this comedy special is about 23 years in the making, okay? Yeah, I'll tell you what I mean by that. 23 years ago is when I first came to the Comedy Store and became a regular, and became a comedian and disappointed my Iranian immigrant parents."}
+{"domain": "speech", "docid": "test-en-speech_OyCyIOEyL20_000", "clean_source": "About 450 million years ago, plants took a giant leap out of the oceans onto the land to become the plants that we know and love today. But how did they survive? Scientists at the John Innes Centre may have found out. Land plants survive by getting water and nutrients from the soil. They do this by forming a special friendship with soil-dwelling fungi called mycorrhiza. These strands of mycorrhiza reach deep into the soil and drag the nutrients and water back to the plants. But when the first algae landed on soil, how did they survive long enough to form these beneficial friendships?"}
+{"domain": "speech", "docid": "test-en-speech_P7qy6VYelYk_000", "clean_source": "It seems that as we suspected, the evidence is mounting to support the far more logical claim that an advanced lost civilization's heritage has been stolen by different, more modern civilization all over the world. A great civilization did once flourish here on Earth--one which has been actively suppressed, stolen from, exploited, and hidden for far too long. Thanks for watching, guys, and until next time, take care."}
+{"domain": "speech", "docid": "test-en-speech_PKgwplBTr7s_002", "clean_source": "I'll never be a superhero. You have the power. The problem is you have so much that you can't control it. I know who can help us train better. Of course! We'll start with virtual training! This VR is super realistic. We were just walking by and we thought, hey, let's test out the new little weakling."}
+{"domain": "speech", "docid": "test-en-speech_Q4lcIWMntCY_000", "clean_source": "Hello, and welcome to this travel vlog. Today we are exploring the city of Rotterdam. Rotterdam is a city located in the province of South Holland. It is a city that divides opinions because of its more modern and urban-looking architecture. Rotterdam was almost completely destroyed during World War II when the Germans attacked the city. Because of this, the city had to be rebuilt, resulting in it looking quite different from the other cities in the Netherlands."}
+{"domain": "speech", "docid": "test-en-speech_Q5coSYYa6z0_000", "clean_source": "Affordable furniture DIYs are always a hit here on Lone Fox, so I wanted to share with you guys how I created this nightstand from a simple crate from IKEA. So this is the Knagglig crate, which you can pick up for about $10 at IKEA. And I went ahead and I started off by just constructing it based off the instructions. You have to just screw all of the elements together. And once they are all screwed up, you have a basic wooden crate. Now on the bottom of the wooden crate, I wanted to add a leg, so I elevated it off the floor with these little wooden trinket dishes, or like little wooden trays that I found at the craft store as well. They are just a simple wood, very similar to the one from IKEA, and I just E6000ed these down. You could also use a nail gun if you'd like to. And once you are done, you have a very simple, minimal nightstand."}
+{"domain": "speech", "docid": "test-en-speech_Q6ND_8glacs_000", "clean_source": "What's up, guys? Zach here with Veteran Construction. For a lot of you, this is your first time on the roofing side of YouTube. So I want to welcome you guys personally by making a video that's very important to me. The subject of this video is, if I was to do this roof, and I've never shingled before, how would I do it, knowing everything that I know now? So this is a video that's going to help DIYers or new shinglers not make mistakes, and take the proper precautions to get this job done right, without wasting time. So first things first, we need to familiarize ourselves with this material."}
+{"domain": "speech", "docid": "test-en-speech_QaueRRYecxo_000", "clean_source": "While the Rescue Force patrols the city, we'll take care of watching over the museum in the box. It wouldn't be a good idea for the villains to try and steal the Cabbonita with us waiting inside. We've run out of money! We'll have to steal that diamond and sell it! Otherwise, we'll have to do our experiments with soda pop! How are we going to get the bots inside? It's all taken care of."}
+{"domain": "speech", "docid": "test-en-speech_QebrbHpjAac_000", "clean_source": "The Tomb of the Unknown Soldier is a monument dedicated to servicemen who gave everything in defense of our country. Located in Arlington National Cemetery, Virginia, and attracting millions of visitors each year, the Tomb of the Unknown Soldier stands proudly protected by tomb sentinels. The soldiers of the 3rd United States Infantry Regiment, the Old Guard, took over the right to guard the Tomb in April of 1948, and continue to carry on this sacred duty. The Tomb of the Unknown Soldier has been guarded 24 hours a day, seven days a week, 365 days a year, for the past 77 years."}
+{"domain": "speech", "docid": "test-en-speech_RFcdOs5dgT4_000", "clean_source": "Time for the Scotty Kilmer channel. Does your car have faded paint on it? Then stay tuned, because today I'm going to show you how to polish off faded paint. And all it takes is a bucket of water, a polisher, and a bottle of this Meguiar's Ultimate Compound."}
+{"domain": "speech", "docid": "test-en-speech_ROZqk4cadGo_000", "clean_source": "Hook the vacuum up to it, it helps keep the dust down, and you can prep your concrete that way also. We prefer to do it with the hand grinders ourself, so either way will work pretty good. Usually if it's got an epoxy coating already, the hand grinders work a little better, but this thing works really good too. So after we do that, we fix all the cracks, fix all the divots with our patch repair material, and then we grind them smooth. And then we clean the concrete and get it ready for the first coating. This is going to be a 100% solids epoxy, so it goes on in its different procedures, different stages."}
+{"domain": "speech", "docid": "test-en-speech_RSOuFEX6LvU_000", "clean_source": "The Zoroastrian text, Vendidad, states that Yima built an underground city on the orders of the god Ahura Mazda, to protect his people from a catastrophic winter. Much like the account of Noah in the Bible, Yima was instructed to collect pairs of the best animals and people as well as the best seeds in order to reseed the Earth after the winter cataclysm. This was before the last Ice Age, 110,000 years ago."}
+{"domain": "speech", "docid": "test-en-speech_RfoVF8wcZRI_000", "clean_source": "Okay, so let me explain. All right, so the problem is, if you look inside there... You see the wood siding? There's the old siding, and it butts up to the shingles there. And then I put this over it. And what happens is the dirt collects there, to that flashing."}
+{"domain": "speech", "docid": "test-en-speech_RpercXhgNXM_000", "clean_source": "Hey guys, Thunder E here, and welcome to the video you've been waiting for. I am talking about gaming on the ASUS ROG Phone 5. Now, the ROG Phone series is well known for its gaming powers, but in this video, we're going to find out if the ROG Phone 5 is truly taking back the crown as the king of gaming phones."}
+{"domain": "speech", "docid": "test-en-speech_RyVaAQ9vtkw_000", "clean_source": "It is December 1997, and the Imperial Sugar Company is acquiring a new production site at Port Wentworth from Savannah Foods and Industries Incorporated. There is nothing really of note here. It was doing what businesses do, and that is acquiring to expand. The site has been home to food production and processing since the early 1900s. Savannah Industries Incorporated began construction of granulated sugar production facilities at Port Wentworth during the 1910s, completing it in 1917."}
+{"domain": "speech", "docid": "test-en-speech_S9xH4qIE5D4_003", "clean_source": "The next member of the 85 South Show. He needs no introduction. Where my ladies at?! We gonna give him an introduction anyway. He's out of Atlanta, by way of Mississippi. You might have seen him on MTV Wild 'n Out. Ladies, he is the coldest in the game right now. Your baby daddy, Karlous Miller's in the building!"}
+{"domain": "speech", "docid": "test-en-speech_SVWbCPnd0Wc_000", "clean_source": "We're just going to let that sit and rehydrate for a couple minutes. With ultralight cooking, we're not actually cooking on the stove. We're primarily boiling water so that we can rehydrate our food. It's also one of the reasons why we use instant grits. Less cooking time, less fuel, and less weight. Oh yeah. So this is about what we've got going on here. Perfect consistency."}
+{"domain": "speech", "docid": "test-en-speech_SqITfOGvfZk_001", "clean_source": "The thick cloud cover prevented sunlight from reaching the surface of the Earth. The Earth underwent a global glaciation event, known as the Snowball Earth. This caused another global mass extinction. But once again, some life survived yet another difficult period, beneath the ice sheet."}
+{"domain": "speech", "docid": "test-en-speech_TBPP-za78BQ_000", "clean_source": "Kaboom City is the city of heroes. The Super Things and the Kazoom Kids fight with their powers derived from Kazoom itself. It's the most potent energy source ever known, and now it's on display at the city museum for all to admire. And we're going to steal it! Isn't it dangerous to slip through here? Negative. This is the way the Kazooms are coming."}
+{"domain": "speech", "docid": "test-en-speech_TLePhdsMMlw_000", "clean_source": "With digital tools, it is easier than ever to create, edit, and publish your work to the world. But there's a cost. It's also easier than ever to spread misinformation, and fake news has become a real issue in recent times. We see this with students. According to a Stanford study, only 25% of high school students were able to identify an accurate news story compared to a fake one. Students also had a hard time distinguishing between real and fake photographs, as well as authentic and staged videos."}
+{"domain": "speech", "docid": "test-en-speech_UL2vofFT7wQ_000", "clean_source": "Thirty million years ago, a monster roamed the landscape. Well, we're talking about one of the most ferocious animals that probably ever walked the earth. This was the biggest beast to live in North America since the dinosaurs. Look at the size of that skull. Look at all those teeth in there. There is no animal like this anywhere."}
+{"domain": "speech", "docid": "test-en-speech_UVUatYPScjw_000", "clean_source": "Let's ride that one over there. Whoa, whoa, whoa, big boy! You're a little too hefty for this ride. Safety first, eh? 30 bills? What a rip-off. I told you. Watch your step!"}
+{"domain": "speech", "docid": "test-en-speech_V63Xcec-5jE_004", "clean_source": "I'm going to California. You're going to California. And why should you go to California? The United States ain't good enough for you? Ach! A fine citizen you are, yes? You don't even know that California is in the United States! But what are you laughing about? I gotta laugh, because you are so dumb, you didn't even know that I was making a joke with you."}
+{"domain": "speech", "docid": "test-en-speech_Vi03zz6eCik_000", "clean_source": "Hello and welcome to a pilot of sorts of a new series. It will delve into the history of some of the world's worst scandals--some you may know, and some you may not. It's been inspired in part by an RTE program called Scannál. Although, rather than focusing on events linked to Ireland, I plan to widen the scope of what I'll cover. Well, without further delay, let's get started."}
+{"domain": "speech", "docid": "test-en-speech_VjXupedjdR4_007", "clean_source": "Yeah, I did like some re--. I did some research to get ready for tonight, because like I said, I'm a real dumb--. The only thing I know about government is the reason we're here, which is that it doesn't work for us. Like, that's literally all I know. So that was kind of nice to get into. But I did some research of, like, how a bill becomes a law. So I watched the Schoolhouse Rock video. Yes, we all love it."}
+{"domain": "speech", "docid": "test-en-speech_W94uDJ55BmM_000", "clean_source": "You, you the world! You're full of surprises, aren't you? I remember a few years back, watching some of those Resident Evil movies with Milla Jovovich and thinking, \"It can't get any worse than this!\" Yeah, it feels like a simpler time. But with 2021's final gasping breath, it came out with Resident Evil: Welcome to Raccoon City. AKA, Welcome to Hell."}
+{"domain": "speech", "docid": "test-en-speech_WLS2EoW96t4_000", "clean_source": "Hi everyone, welcome back to the Its Dwight cooking show. Today I'll be giving you a tuna macaroni salad recipe. Nice and easy. Just a simple recipe. Here you see a list of my ingredients: my bell pepper, my green onions, my white onions, half a teaspoon of salt for taste, black pepper, or if you have ground pepper, you can use it, my macaroni, three eggs that are going to be boiled, and my tuna."}
+{"domain": "speech", "docid": "test-en-speech_WbO8dOhsgY4_003", "clean_source": "We are at Tokeh Beach today. Tokeh Beach is a resort here in Sierra Leone. I'm here with my cousins. Should be a lovely day. Just a really chill time on the beach. Nothing too much is happening or nothing planned, but... Oh, it looks like there might be a wedding reception. Everybody's getting married. Oooh, it seems like there's a wedding or some type of engagement. It looks beautiful out here. Doesn't it?"}
+{"domain": "speech", "docid": "test-en-speech_WtGHeibBKrA_007", "clean_source": "For Raptor specialist Bob Anderson, the pioneer's attitude was simply arrogant and ignorant. All birds of prey were just considered vermin. I mean, they were all chickenhawks. They were all bad birds, be it a Bald Eagle, a Golden Eagle, a Red-tailed Hawk. They were all shot."}
+{"domain": "speech", "docid": "test-en-speech_XwIQLLbD7SI_001", "clean_source": "And I'd like to start by turning to Dr. Vishal Sikka, the CEO of Infosys. Vishal, you're the son of a railways engineer. You saw technology at that phase, and you're also a surfer, so you know all about dodging the waves. What's the disruption that we most need to pay attention to that's coming from the new technologies, and why? Why should we pay so much attention to the disruption?"}
+{"domain": "speech", "docid": "test-en-speech_YGkZRb3aer8_001", "clean_source": "To create the antique brass ornament, I just went in with a coat of rub and buff onto the entire ornament there. And then of course, we have to get that antique look with the alcohol ink. So I went in with ginger first. I applied a droplet onto our ornament and just blended it out like so. And I just continued that process until I had as many layers as I liked, and it looked really antiqued in like an actual metal ornament. After that, I did go in with a little bit more of that burnished amber spray paint as well, and just applied that to the surface, to kind of give it that oxidized look like we did for the bell ornaments. And that is how I finished off these antique brass bobbles. Really simple and easy, but honestly, they look like real metal and they're beautiful."}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_1_words_982"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_detestable_chunk_2_words_945"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_1_words_996"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_fight_above_the_trees_chunk_2_words_991"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_1_words_993"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_forever_snow_chunk_2_words_986"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_1_words_992"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
+{"domain": "literary", "docid": "test-en-literary_the_other_side_stormfall_chunk_2_words_956"}
