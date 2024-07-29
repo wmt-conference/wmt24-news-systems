@@ -1,0 +1,252 @@
+% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
+\pdfoutput=1
+% In particular, the hyperref package requires pdfLaTeX in order to break URLs across lines.
+
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
+% Change to "preprint" to generate a non-anonymous version with page numbers.
+\usepackage[final]{acl}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+
+%Including images in your LaTeX document requires adding
+%additional package(s)
+\usepackage{graphicx}
+
+% added by VZ
+\usepackage{enumitem}
+\usepackage{geometry}
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+\setlength\titlebox{8cm}
+%
+% and set <dim> to something 5cm or larger.
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{ulem} % for strikethrough
+\usepackage{pifont}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+% added by VZ
+\usepackage{soul}
+\newcommand{\hlc}[2][yellow]{{%
+    \colorlet{foo}{#1}%
+    \sethlcolor{foo}\hl{#2}}%
+}
+
+
+% Define macros for row styles
+\newcommand{\opentrack}[1]{\rowcolor{gray!20} #1}
+\newcommand{\closedtrack}[1]{\rowcolor{gray!50} #1}
+\newcommand{\nonsupporting}[1]{#1 \S}
+\newcommand{\validated}{\colorbox{black}{\textcolor{white}{\ding{51}}}}
+
+
+\usepackage[textsize=footnotesize]{todonotes}
+\newcommand{\tk}[1]{\todo[inline,color=green!20!white]{Tom: #1}} 
+\newcommand{\VZ}[1]{\todo[inline,color=pink!20!white]{Vilém: #1}} 
+\newcommand{\vz}[1]{\todo[color=pink!20!white]{Vilém: #1}} 
+
+
+
+\title{Preliminary WMT24 Ranking of General MT Systems and LLMs}
+
+
+
+\author{
+  \null \AND
+  Tom Kocmi  
+  \And
+  Eleftherios Avramidis 
+  \And
+  Rachel Bawden 
+  \And
+  Ond\v{r}ej Bojar
+  \AND
+  Anton Dvorkovich 
+  \And
+  Christian Federmann  
+  \And
+  Mark Fishel  
+  \And
+  Markus Freitag
+  \AND
+  Thamme Gowda
+  \And
+  Roman Grundkiewicz
+  \And
+  Barry Haddow  
+  \And
+  Marzena Karpinska 
+  \AND
+  Philipp Koehn 
+  \And
+  Benjamin Marie 
+  \And
+  Kenton Murray 
+  \And
+  Masaaki Nagata
+  \And
+  Martin Popel 
+  \AND 
+  Maja Popovi\'{c}  
+  \And
+  Mariya Shmatova 
+  \And
+  Steinþór Steingrímsson 
+  \And 
+  Vilém Zouhar
+% 
+  \vspace{2cm}
+}
+
+
+
+\begin{document}
+\maketitle
+
+
+\section*{Introduction}
+
+This is the preliminary ranking of WMT24 General MT systems based on automatic metrics. The official ranking will be a human evaluation, which is superior to the automatic ranking and supersedes it.
+The purpose of this report is not to interpret any findings but only provide preliminary results to the participants of the General MT task that may be useful during the writing of the system submission.
+The automatic results are in the 11 pages following the main text. For the system submissions, use any of the tables without modifying them and subsampling systems or metrics.
+
+\section*{Automatic Ranking}
+
+Despite human ranking being superior to automatic ranking (see Limitations), we design a way of ranking systems before finishing the collection of human annotations.
+Amidst the many options, we select two following metrics:
+\begin{itemize}[noitemsep,left=0mm]
+    \item MetricX-23-XL \citep{juraska-etal-2023-metricx} -- a reference based metric build on top of mT5 model.
+    \item CometKiwi-DA-XL \citep{rei-etal-2023-scaling} -- a quality estimation metric built on the XLM-R XL model.
+\end{itemize}
+
+\noindent
+Both metrics are top performing metrics \citep{freitag-etal-2023-results}.
+We intentionally select two distinct metrics (underlying pretrained system and architecture) to minimize their bias and potential problems.
+Although quality estimation is on average slightly worse than reference-based metrics, it helps us avoid a potential reference bias when human references are suboptimal \citep{freitag-etal-2023-results}.
+Similarly, multilingual quality estimation can be fooled when the translation is in the incorrect language, which the reference-based metric would penalize.
+
+To design the automatic ranking, we first linearly scale the scores of each metric to a range between 1 and \textit{the number of systems in a given language pair}.
+After this, we average both normalized scores to arrive at the final automatic ranking, which we call AutoRank.
+
+\section*{Types of Systems}
+We distinguish three types of MT systems participating in the shared task:
+\begin{itemize}%[noitemsep,left=0mm]
+\item \textbf{Constrained systems} are those using only the specifically allowed training data for WMT2024 and the following pretrained models:
+Llama-2-7B, Llama-2-13B, Mistral-7B, mBART, BERT, RoBERTa, XLM-RoBERTa, sBERT, LaBSE. Constrained systems may use any publicly available metric that was evaluated on past WMT Metrics shared tasks (e.g. COMET or Bleurt) and any basic linguistics tools (e.g. taggers, parsers, morphology analyzers).
+
+\item \textbf{Open systems} (marked in tables with a \hlc[gray!20]{light gray} background) may use software and data under any open source license that places no constrains for non-commercial purposes (e.g. Apache, MIT) allowing to make the work replicable by any research group.
+
+\item \textbf{Closed systems} (marked with \hlc[gray!50]{dark gray}) are all the remaining (fully automatic) systems, with no limitations on their training data (all ONLINE systems fit into this category).
+\end{itemize}
+
+\section*{Human Evaluation}
+
+This year, we received an unusually high number of submitted systems and we are not able to evaluate them all with human annotators.
+Therefore, we select a subset of 10 to 15 systems per language pair which will be evaluated by humans with the Error Span Annotation protocol \citep{kocmi2024errorspanannotationbalanced}.
+For the remaining systems, AutoRank is going to be the official final ranking.
+
+When selecting the systems for human evaluation, we prioritize open and constrained systems and penalize low-performing closed systems.
+Therefore, we select the systems for human evaluation based on the following two rules:
+
+First,
+we exclude closed systems that are not among the first third of all systems
+and we exclude open systems that are not among the top two thirds of all systems.
+
+Second, motivated by several very low-performing systems, we also define a hard cutoff point.
+After this point we do not evaluate any system from any category.
+The cutoff point is selected as the first gap between two neighboring system's ranks larger than 1.5 of AutoRank.
+We specify this cutoff point by a thick line in all the following tables in the rest of this paper.
+The systems marked with $\dagger$ have been removed from human evaluation due to the author's request or not fulfilling submission requirements.
+
+\section*{Evaluated Systems}
+
+Details of all systems are going to be available in the upcoming WMT24 findings.
+In addition to participants, we also collect most popular LLMs in a 3-shot approach, specifically, we collected: Aya23, Claude-3.5-Sonnet, Command R+, GPT-4, Gemini-1.5-Pro, Llama3-70B, Mistral-Large, and Phi-3-Medium.
+We looked into the original reports for these LLMs to see which languages are claimed to be supported by checking if both source and target languages are mentioned or evaluated in any of their multilingual settings. 
+We marked LLMs that do not officially claim a support for a given language by \nonsupporting{} in the tables. But to avoid the selection bias, we collect translations for all languages, even those not officially claimed to be supported.\footnote{The code for collecting translations: \\ \null\hfill \href{https://github.com/wmt-conference/wmt-collect-translations}{github.com/wmt-conference/wmt-collect-translations}}
+
+\section*{Evaluated Data}
+
+We evaluated 11 language pairs with approximately 1k segments per language (an exception is Czech$\rightarrow$Ukrainian with 2.3k segments). The average size is around 32k words per language pair.
+The domains cover news, social, speech, and literary.
+We do not provide any sentence splitting, thus many segments contain multiple sentences. 
+We release all data at: \href{https://github.com/wmt-conference/wmt24-news-systems}{github.com/wmt-conference/wmt24-news-systems}.
+
+
+
+
+\section*{Limitations}
+
+Some models may have used Comet or MetricX during their training, for example, using Minimum Bayes Risk \citep{freitag-etal-2022-high}. Such models will be biased in this evaluation and will obtain artificially higher scores.
+
+Automatic metrics are limited and biased \citep{karpinska-etal-2022-demetr, moghe2024machine}, which motivates the superseding by human evaluation. Another potential problem may have been that test sets we use are paragraph-level, however, automatic metrics have usually been tested in a sentence-level scenario.
+
+
+We are not using BLEU nor ChrF on purpose, string-based metrics have for years low-performance when compared to humans \citep{kocmi-etal-2021-ship, freitag-etal-2022-results, freitag-etal-2023-results} and are especially misleading when comparing systems of different types \citet{callison-burch-etal-2006-evaluating, kocmi2024navigating}. Lastly, none of the evaluated languages is a low-resource language where pretrained metrics could struggle.
+
+
+\section*{Acknowledgement}
+This report would not have been possible without the partnership with Microsoft, Charles University, Dubformer, Toloka, NTT, Google, Árni Magnússon Institute, Custom.mt, Cohere, Together.ai, and Unbabel.
+We are grateful for help from Nikolay Bogoychev and Konstantin Dranch.
+
+
+% \newgeometry{top=0cm,left=0cm,right=0cm,bottom=0cm}
+% added by VZ
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\input{generated_report.tex}
+% \restoregeometry
+
+\clearpage
+\bibliography{anthology.min.bib,custom}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
