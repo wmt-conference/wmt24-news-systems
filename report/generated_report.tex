@@ -213,7 +213,7 @@ CycleL & 24.0 & 20.9 & 0.072 &  \\
 \opentrack{IOL-Research & 2.3 & 2.8 & 0.701 & \validated} \\
 \closedtrack{Gemini-1.5-Pro & 2.4 & 2.8 & 0.696 & \validated} \\
 \opentrack{\nonsupporting{Llama3-70B} & 2.6 & 3.0 & 0.693 & \validated} \\
-\closedtrack{ONLINE-B & 2.7 & 3.1 & 0.690 & } \\
+\closedtrack{ONLINE-B $\dagger$ & 2.7 & 3.1 & 0.690 & \validated} \\
 \closedtrack{ONLINE-W & 2.7 & 3.0 & 0.682 & } \\
 \closedtrack{TranssionMT & 2.8 & 3.2 & 0.689 & } \\
 \opentrack{IKUN & 2.8 & 3.3 & 0.687 & \validated} \\
@@ -318,7 +318,7 @@ CycleL & 21.0 & 20.2 & 0.148 &  \\
 \opentrack{AMI & 3.7 & 4.9 & 0.663 & \validated} \\
 IKUN-C & 3.7 & 4.9 & 0.657 & \validated \\
 \closedtrack{TranssionMT & 4.2 & 5.5 & 0.653 & } \\
-\closedtrack{ONLINE-B & 4.2 & 5.5 & 0.652 & } \\
+\closedtrack{ONLINE-B $\dagger$ & 4.2 & 5.5 & 0.652 & \validated} \\
 \opentrack{IOL-Research & 4.3 & 5.7 & 0.655 & \validated} \\
 \closedtrack{ONLINE-A & 5.5 & 6.4 & 0.603 & } \\
 \opentrack{\nonsupporting{Llama3-70B} & 6.7 & 8.0 & 0.586 & \validated} \\
@@ -356,6 +356,7 @@ NTTSU & 1.9 & 2.6 & 0.731 & \validated \\
 IKUN-C & 3.9 & 4.3 & 0.669 & \validated \\
 \midrule
 AIST-AIRC & 6.6 & 6.5 & 0.583 &  \\
+UvA-MT & 6.7 & 6.7 & 0.589 &  \\
 CycleL & 24.0 & 22.4 & 0.101 &  \\
 \bottomrule
 \end{tabular}
@@ -385,7 +386,7 @@ IKUN-C & 3.9 & 4.3 & 0.669 & \validated \\
 \midrule
 \closedtrack{ONLINE-G & 6.4 & 6.6 & 0.599 & } \\
 AIST-AIRC & 6.6 & 6.5 & 0.583 &  \\
-\closedtrack{UvA-MT & 6.7 & 6.7 & 0.589 & } \\
+UvA-MT & 6.7 & 6.7 & 0.589 &  \\
 \closedtrack{NVIDIA-NeMo $\dagger$ & 6.9 & 6.9 & 0.582 & } \\
 CycleL & 24.0 & 22.4 & 0.101 &  \\
 \bottomrule
@@ -519,6 +520,7 @@ HW-TSC & 2.3 & 3.4 & 0.675 & \validated \\
 \opentrack{Aya23 & 3.0 & 4.1 & 0.655 & \validated} \\
 \opentrack{IKUN & 3.1 & 4.0 & 0.646 & \validated} \\
 IKUN-C & 3.5 & 4.2 & 0.624 & \validated \\
+UvA-MT $\dagger$ & 4.3 & 5.2 & 0.607 &  \\
 \midrule
 CycleL & 20.1 & 20.1 & 0.086 &  \\
 CycleL2 & 22.0 & 22.1 & 0.030 &  \\
@@ -545,7 +547,7 @@ HW-TSC & 2.3 & 3.4 & 0.675 & \validated \\
 \closedtrack{\nonsupporting{Phi-3-Medium} & 3.1 & 4.2 & 0.648 & } \\
 \closedtrack{ONLINE-A & 3.3 & 4.1 & 0.636 & } \\
 IKUN-C & 3.5 & 4.2 & 0.624 & \validated \\
-\closedtrack{UvA-MT & 4.3 & 5.2 & 0.607 & } \\
+UvA-MT $\dagger$ & 4.3 & 5.2 & 0.607 &  \\
 \closedtrack{ONLINE-G & 4.8 & 5.5 & 0.588 & } \\
 \midrule
 \closedtrack{NVIDIA-NeMo $\dagger$ & 7.3 & 7.6 & 0.494 & } \\
@@ -573,6 +575,7 @@ Team-J & 2.8 & 4.0 & 0.570 & \validated \\
 \opentrack{Aya23 & 3.7 & 5.0 & 0.563 & \validated} \\
 \opentrack{NTTSU & 3.7 & 5.3 & 0.566 & \validated} \\
 \opentrack{IKUN & 4.4 & 5.4 & 0.544 & \validated} \\
+UvA-MT $\dagger$ & 5.2 & 6.3 & 0.534 &  \\
 IKUN-C & 5.5 & 6.2 & 0.519 & \validated \\
 \midrule
 MSLC & 8.9 & 8.8 & 0.450 &  \\
@@ -598,8 +601,8 @@ Team-J & 2.8 & 4.0 & 0.570 & \validated \\
 \opentrack{NTTSU & 3.7 & 5.3 & 0.566 & \validated} \\
 \closedtrack{\nonsupporting{Phi-3-Medium} & 4.0 & 5.1 & 0.552 & } \\
 \opentrack{IKUN & 4.4 & 5.4 & 0.544 & \validated} \\
-\closedtrack{ONLINE-B & 5.2 & 5.5 & 0.518 & } \\
-\closedtrack{UvA-MT & 5.2 & 6.3 & 0.534 & } \\
+\closedtrack{ONLINE-B $\dagger$ & 5.2 & 5.5 & 0.518 & \validated} \\
+UvA-MT $\dagger$ & 5.2 & 6.3 & 0.534 &  \\
 \closedtrack{ONLINE-W & 5.3 & 6.0 & 0.522 & } \\
 IKUN-C & 5.5 & 6.2 & 0.519 & \validated \\
 \closedtrack{ONLINE-A & 6.8 & 6.8 & 0.484 & } \\
