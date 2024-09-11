@@ -9,7 +9,6 @@ flags.DEFINE_bool('preload', False, 'Use pickle file?')
 FLAGS = flags.FLAGS
 
 
-
 language_mapping = {
     "en": "English",
     "cs": "Czech",
@@ -42,7 +41,7 @@ def main(argv):
     # if there are multiple ratings for the same segment, average them
     subdf = df.groupby(['annot_id', 'lp', 'system_id', 'orig_segment_id'])
     if len(subdf) != len(df):
-        df = subdf.agg({'rating': 'mean'}).reset_index()
+        df = subdf.agg({'overall': 'mean'}).reset_index()
 
     # read file AutoRank.xlsx containing multiple sheets, each as individual df
     autoranks = pd.read_excel('AutoRank.xlsx', sheet_name=None)
@@ -60,19 +59,20 @@ def main(argv):
         if avg_annotations_per_system < 100:
             continue
 
-        per_domain = df_lp.groupby(['system_id', 'domain_name'])['rating'].mean().reset_index()
-        avg_rating = per_domain.groupby('system_id')['rating'].mean().reset_index().set_index('system_id', drop=False)
+        per_domain = df_lp.groupby(['system_id', 'domain_name'])['overall'].mean().reset_index()
+        avg_rating = per_domain.groupby('system_id')['overall'].mean().reset_index().set_index('system_id', drop=False)
         for domain in per_domain['domain_name'].unique():
-            avg_rating[f"domain_{domain}"] = per_domain[per_domain['domain_name'] == domain].set_index('system_id')['rating']
+            avg_rating[f"domain_{domain}"] = per_domain[per_domain['domain_name'] == domain].set_index('system_id')['overall']
+            avg_rating['position_' + domain] = avg_rating['domain_' + domain].rank(ascending=False)
+        avg_rating['position_overall'] = avg_rating['overall'].rank(ascending=False)
         
         # if not macro average, overwrite avg_rating with system average
         if FLAGS.micro:
-            avg_rating['rating'] = df_lp.groupby('system_id')['rating'].mean().reset_index().set_index('system_id')['rating']
+            avg_rating['overall'] = df_lp.groupby('system_id')['overall'].mean().reset_index().set_index('system_id')['overall']
+        
 
-        # sort by rating
-        avg_rating = avg_rating.sort_values('rating', ascending=False).reset_index(drop=True)
-        # round ranking to single decimal
-        avg_rating['rating'] = avg_rating['rating'].round(1)
+        # sort by overall rating
+        avg_rating = avg_rating.sort_values('overall', ascending=False)
 
         pvalues = get_pvalues(df_lp, not FLAGS.micro)
         ranks, wins, losses = get_ranks(pvalues, df_lp['system_id'].unique())
@@ -81,11 +81,11 @@ def main(argv):
         avg_rating['rank'] = avg_rating['system_id'].apply(lambda x: ranks[x])
         avg_rating['wins/losses'] = avg_rating['system_id'].apply(lambda x: f"{wins[x]}/{losses[x]}")
         avg_rating['cluster'] = 0
-        
+                    
         current_cluster = 1
         max_cutoff = 1
         for index, row in avg_rating.iterrows():
-            position = index + 1
+            position = row['position_overall']
             if position > max_cutoff:
                 current_cluster += 1
             avg_rating.at[index, 'cluster'] = current_cluster
@@ -117,6 +117,7 @@ def main(argv):
 
         lp_name = f"{lp_name} ({avg_annotations_per_system:0.0f} segments per system)"
         results[lp_name] = avg_rating
+
 
         # add data not used in human evaluation
         for index, row in autoranks[lp].iterrows():

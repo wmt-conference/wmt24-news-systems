@@ -67,9 +67,9 @@ def load_mqm(filename):
 
     df['error_spans'] = df.apply(lambda x: f"{{'severity':{x['severity']}, 'error_type:{x['category']}'}}", axis=1)
 
-    df['rating'] = df.apply(lambda x: mqm_weights(x), axis=1)
+    df['overall'] = df.apply(lambda x: mqm_weights(x), axis=1)
 
-    aggregation = {'rating': 'sum', 'error_spans': lambda x: ', '.join(x)}
+    aggregation = {'overall': 'sum', 'error_spans': lambda x: ', '.join(x)}
     df = df.groupby(['system_id', 'doc_id', 'segment_id', 'user_id', 'source_lang', 'target_lang'], as_index=
 False).agg(aggregation)
     
@@ -162,7 +162,8 @@ def load_data(filename, only_paired=False, is_mqm=False, remove_qc=True):
     else:
     # keep everything as a string to avoid errors
         df = pd.read_csv(filename, header=None, dtype=str)
-        df.columns = ['user_id', 'system_id', 'segment_id', 'segment_type', 'source_lang', 'target_lang', 'rating', 'doc_id', 'unk', 'error_spans', 'start_time', 'end_time']
+        df.columns = ['user_id', 'system_id', 'segment_id', 'segment_type', 'source_lang', 'target_lang', 'overall', 'doc_id', 'unk', 'error_spans', 'start_time', 'end_time']
+        df = df.drop(columns=['unk'])
         
         df['source_lang'] = df['source_lang'].apply(lambda x: langcode_mapping[x])
         df['target_lang'] = df['target_lang'].apply(lambda x: langcode_mapping[x])
@@ -177,7 +178,7 @@ def load_data(filename, only_paired=False, is_mqm=False, remove_qc=True):
             df = df[~df['doc_id'].str.contains('#incomplete')]
 
             # #dup is used to fill the account with identical evaluation
-            df = df[~df['doc_id'].str.contains('#dup')]
+            df = df[~df['doc_id'].str.contains('#dup')]            
         
     df['wave'] = filename
     df['lp'] = df['source_lang'] + '-' + df['target_lang']
@@ -190,7 +191,7 @@ def load_data(filename, only_paired=False, is_mqm=False, remove_qc=True):
         df = df.drop_duplicates(['user_id', 'annot_id'], keep='first')
 
     # process for ranking
-    df['rating'] = df['rating'].astype(float)
+    df['overall'] = df['overall'].astype(float)
 
     # we need the segments to be evaluated across all systems to avoid bias from additional segments
     if only_paired:
@@ -236,7 +237,6 @@ def weighted_wilcoxon_signed_rank_test(df, x, y, macro_avg=True):
     return pvalue
 
 
-
 def get_pvalues(df, macro_avg=True):
     systems = df['system_id'].unique()
     ranks = {}
@@ -248,17 +248,17 @@ def get_pvalues(df, macro_avg=True):
         df_system1 = df_system1.set_index('orig_segment_id')
         df_system2 = df_system2.set_index('orig_segment_id')
 
-        # join the columns 'rating' from both dataframes on maximal coverage
-        df_system1 = df_system1[['rating', 'domain_name']]
-        df_system2 = df_system2[['rating']]
-        df_system1.columns = ['rating1', 'domain_name']
-        df_system2.columns = ['rating2']
+        # join the columns 'overall' from both dataframes on maximal coverage
+        df_system1 = df_system1[['overall', 'domain_name']]
+        df_system2 = df_system2[['overall']]
+        df_system1.columns = ['overall1', 'domain_name']
+        df_system2.columns = ['overall2']
         df_system = df_system1.join(df_system2, how='outer')
         # drop rows with NaN values
         df_system = df_system.dropna()
         
-        ranks[(system1, system2)] = weighted_wilcoxon_signed_rank_test(df_system, 'rating1', 'rating2', macro_avg=macro_avg)
-        ranks[(system2, system1)] = weighted_wilcoxon_signed_rank_test(df_system, 'rating2', 'rating1', macro_avg=macro_avg)
+        ranks[(system1, system2)] = weighted_wilcoxon_signed_rank_test(df_system, 'overall1', 'overall2', macro_avg=macro_avg)
+        ranks[(system2, system1)] = weighted_wilcoxon_signed_rank_test(df_system, 'overall2', 'overall1', macro_avg=macro_avg)
     
     return ranks
 
@@ -286,7 +286,7 @@ def get_ranks(pvalues, systems):
 
 
 def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_domains={}):
-    sysname = row['system_id'].replace('_', '\_')
+    sysname = row['system_id'].replace('_', '\\_')
     if sysname.startswith('ref'):
         sysname = sysname.replace('ref', 'HUMAN-')
     if supported=="No":
@@ -297,14 +297,20 @@ def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_dom
     
     if not isinstance(autorank, str):
         autorank = f"{autorank:.1f}"
-    content = f"{rank} & {sysname} & {row['rating']:.1f} & {autorank}"
+    content = f"{rank} & {sysname} & {row['overall']:.1f} & {autorank}"
 
     if len(domains) > 0:
         for domain in domains:
             # mark scores that are out of order
             mark = ''
             if domain in last_domains and last_domains[domain] < row[f'domain_{domain}']:
-                mark += "$\wr$"
+                mark += "$\\wr$"
+
+            # if row[f"position_{domain}"] > row["position_overall"]:
+            #     mark += "$\\wedge$"
+            # elif row[f"position_{domain}"] < row["position_overall"]:
+            #     mark += "$\\vee$"
+
             last_domains[domain] = row[f'domain_{domain}']
             
             content += f" & {mark} {row[f'domain_{domain}']:.1f}"

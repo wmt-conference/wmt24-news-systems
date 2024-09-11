@@ -1,3 +1,5 @@
+numpy
 pandas
 absl-py
 ipdb
+scipy
