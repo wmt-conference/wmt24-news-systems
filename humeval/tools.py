@@ -77,7 +77,7 @@ False).agg(aggregation)
 
 
 def load_all_resources():
-    basefolder = 'wmt24-news-systems/txt'
+    basefolder = '../txt'
 
     sources = {}
     domains = {}
