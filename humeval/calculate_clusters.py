@@ -127,7 +127,8 @@ def main(argv):
                 "system_id": index,
                 "AutoRank": row['AutoRank'],
                 "track": row['type'],
-                "lp_supported": row['lp_supported']
+                "lp_supported": row['lp_supported'],
+                "cluster": total_cluster + 1,
             }
             # append result to avg_rating
             avg_rating = pd.concat([avg_rating, pd.DataFrame([result])], ignore_index=True)
