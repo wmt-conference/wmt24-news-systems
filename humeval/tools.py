@@ -303,17 +303,17 @@ def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_dom
         for domain in domains:
             # mark scores that are out of order
             mark = ''
-            # if domain in last_domains and last_domains[domain] < row[f'domain_{domain}']:
-            #     mark += "$\\wr$"
+            if domain in last_domains and last_domains[domain] < row[f'domain_{domain}']:
+                mark += "$\\wr$"
 
-            if row[f"position_{domain}"] < row["position_overall"] - 3:
-                mark += "$\\Uparrow$"
-            elif row[f"position_{domain}"] < row["position_overall"] - 1:
-                mark += "$\\wedge$"
-            elif row[f"position_{domain}"] > row["position_overall"] + 3:
-                mark += "$\\Downarrow$"
-            elif row[f"position_{domain}"] > row["position_overall"] + 1:
-                mark += "$\\vee$"
+            # if row[f"position_{domain}"] < row["position_overall"] - 3:
+            #     mark += "$\\Uparrow$"
+            # elif row[f"position_{domain}"] < row["position_overall"] - 1:
+            #     mark += "$\\wedge$"
+            # elif row[f"position_{domain}"] > row["position_overall"] + 3:
+            #     mark += "$\\Downarrow$"
+            # elif row[f"position_{domain}"] > row["position_overall"] + 1:
+            #     mark += "$\\vee$"
 
             last_domains[domain] = row[f'domain_{domain}']
             

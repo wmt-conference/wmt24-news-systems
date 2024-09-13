@@ -1,24 +1,25 @@
 \begin{table*}
 \centering
 \small
-{\bf{Czech-Ukrainian (916 segments per system)}}\\
+{\bf{Czech-Ukrainian (1109 segments per system)}}\\
 \begin{tabular}{clcc|rrrrr}
 Rank & System & Human & AutoRank & education & news & official & personal & voice\\
 \toprule
-\closedtrack{1-4 & HUMAN-A & 92.4 & - &  91.6 & $\Downarrow$ 91.0 &  94.4 &  93.7 & $\Downarrow$ 91.1} \\
-\closedtrack{1-5 & \nonsupporting{Claude-3.5} & 92.3 & 1.7 &  89.7 &  92.3 &  93.6 &  94.1 &  91.9} \\
-\closedtrack{1-4 & Gemini-1.5-Pro & 92.0 & 2.0 &  90.3 & $\wedge$ 93.3 &  92.7 & $\vee$ 92.4 &  91.4} \\
-\closedtrack{1-5 & Unbabel-Tower70B & 91.6 & 1.0 &  86.3 &  92.1 & $\wedge$ 94.8 & $\vee$ 91.9 & $\wedge$ 93.1} \\
-\opentrack{3-5 & IOL-Research & 89.3 & 1.9 & $\vee$ 80.8 & $\vee$ 90.2 & $\vee$ 89.0 &  93.4 & $\wedge$ 93.1} \\
+\closedtrack{1-4 & \nonsupporting{Claude-3.5} & 92.8 & 1.7 &  89.6 &  92.5 &  95.1 &  94.6 &  92.3} \\
+\closedtrack{1-4 & HUMAN-A & 92.8 & - & $\wr$ 92.3 &  92.3 &  94.5 &  93.4 &  91.2} \\
+\closedtrack{1-4 & Gemini-1.5-Pro & 92.3 & 2.0 &  89.6 & $\wr$ 95.0 &  93.2 &  92.6 &  91.0} \\
+\closedtrack{1-4 & Unbabel-Tower70B & 91.9 & 1.0 &  86.1 &  93.0 & $\wr$ 94.4 & $\wr$ 93.1 & $\wr$ 93.0} \\
 \midrule
-\closedtrack{6-8 & \nonsupporting{CommandR-plus} & 88.4 & 1.9 &  83.1 & $\vee$ 88.6 &  91.0 &  90.7 & $\vee$ 88.4} \\
-\closedtrack{7-10 & \nonsupporting{GPT-4} & 88.3 & 2.0 &  79.9 &  89.1 &  90.4 & $\Uparrow$ 93.7 & $\vee$ 88.4} \\
-\closedtrack{6-7 & ONLINE-W & 88.0 & 2.3 & $\wedge$ 83.1 & $\Uparrow$ 91.1 & $\vee$ 87.0 &  88.8 &  89.7} \\
-\opentrack{8-11 & IKUN & 86.2 & 2.3 & $\vee$ 77.9 &  87.6 &  87.3 &  88.6 & $\wedge$ 89.9} \\
-\opentrack{8-10 & Aya23 & 85.2 & 2.5 & $\vee$ 72.3 & $\Uparrow$ 91.0 & $\wedge$ 88.0 & $\vee$ 87.4 &  87.2} \\
-10-11 & CUNI-Transformer & 83.8 & 3.0 & $\wedge$ 78.8 &  85.2 &  86.3 &  88.0 &  80.9 \\
+\opentrack{5-5 & IOL-Research & 89.9 & 1.9 &  81.8 &  89.6 &  90.4 & $\wr$ 94.2 & $\wr$ 93.5} \\
 \midrule
-12-12 & IKUN-C & 78.7 & 3.0 & $\wedge$ 78.2 &  57.9 &  84.9 &  87.7 &  85.1 \\
+\closedtrack{6-9 & \nonsupporting{GPT-4} & 89.3 & 2.0 &  81.7 &  88.8 & $\wr$ 91.3 &  94.2 &  90.4} \\
+\closedtrack{6-8 & \nonsupporting{CommandR-plus} & 88.6 & 1.9 & $\wr$ 82.6 &  88.7 & $\wr$ 92.2 &  91.0 &  88.5} \\
+\closedtrack{6-8 & ONLINE-W & 88.4 & 2.3 & $\wr$ 84.0 & $\wr$ 90.9 &  87.7 &  88.3 & $\wr$ 90.9} \\
+\opentrack{8-11 & IKUN & 87.0 & 2.3 &  77.8 &  87.5 & $\wr$ 89.1 & $\wr$ 90.5 &  90.1} \\
+\opentrack{9-10 & Aya23 & 86.0 & 2.5 &  75.0 & $\wr$ 91.2 &  88.0 &  87.5 &  88.5} \\
+10-11 & CUNI-Transformer & 84.9 & 3.0 & $\wr$ 80.5 &  85.6 &  86.2 & $\wr$ 88.4 &  83.9 \\
+\midrule
+12-12 & IKUN-C & 80.8 & 3.0 &  79.5 &  62.8 & $\wr$ 87.8 & $\wr$ 88.7 & $\wr$ 85.2 \\
 \midrule
 \closedtrack{ & \nonsupporting{Mistral-Large} & - & 2.3 &  - &  - &  - &  - &  -} \\
 \closedtrack{ & TranssionMT & - & 2.6 &  - &  - &  - &  - &  -} \\
@@ -42,25 +43,25 @@ Rank & System & Human & AutoRank & education & news & official & personal & voic
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
 \closedtrack{1-2 & HUMAN-A & 92.9 & - &  93.1 &  94.3 &  92.0 &  92.2} \\
-\closedtrack{3-3 & Unbabel-Tower70B & 91.6 & 1.0 &  91.7 &  94.1 &  93.3 &  87.5} \\
-\closedtrack{1-2 & \nonsupporting{Claude-3.5} & 91.2 & 2.1 &  91.2 & $\wedge$ 94.9 &  91.4 &  87.2} \\
+\closedtrack{3-3 & Unbabel-Tower70B & 91.6 & 1.0 &  91.7 &  94.1 & $\wr$ 93.3 &  87.5} \\
+\closedtrack{1-2 & \nonsupporting{Claude-3.5} & 91.2 & 2.1 &  91.2 & $\wr$ 94.9 &  91.4 &  87.2} \\
 \midrule
-\closedtrack{4-6 & ONLINE-W & 88.9 & 2.8 &  91.0 &  91.9 & $\vee$ 88.0 & $\vee$ 84.7} \\
-4-7 & CUNI-MH & 88.5 & 2.1 &  90.0 &  91.9 & $\vee$ 88.0 & $\Downarrow$ 84.1 \\
-\closedtrack{4-6 & Gemini-1.5-Pro & 88.2 & 2.6 &  88.6 & $\Downarrow$ 89.3 & $\vee$ 85.2 & $\Uparrow$ 89.5} \\
-\closedtrack{6-8 & \nonsupporting{GPT-4} & 87.7 & 2.6 &  85.2 & $\vee$ 89.5 & $\wedge$ 90.1 &  86.1} \\
-\closedtrack{7-11 & \nonsupporting{CommandR-plus} & 86.9 & 2.9 &  85.2 & $\Downarrow$ 87.5 & $\wedge$ 88.6 & $\wedge$ 86.2} \\
-\opentrack{8-11 & IOL-Research & 86.5 & 2.8 &  84.7 &  90.4 &  86.3 &  84.4} \\
-8-11 & SCIR-MT & 85.4 & 3.2 &  85.0 & $\Uparrow$ 92.4 & $\vee$ 82.2 &  82.1 \\
-8-12 & CUNI-DocTransformer & 84.3 & 4.4 &  83.1 & $\Uparrow$ 90.7 & $\Downarrow$ 80.9 &  82.4 \\
-\opentrack{11-12 & Aya23 & 84.1 & 4.3 &  81.6 & $\wedge$ 89.9 & $\wedge$ 84.9 &  80.2} \\
+\closedtrack{4-6 & ONLINE-W & 88.9 & 2.8 &  91.0 &  91.9 &  88.0 &  84.7} \\
+4-7 & CUNI-MH & 88.5 & 2.1 &  90.0 &  91.9 &  88.0 &  84.1 \\
+\closedtrack{4-6 & Gemini-1.5-Pro & 88.2 & 2.6 &  88.6 &  89.3 &  85.2 & $\wr$ 89.5} \\
+\closedtrack{6-8 & \nonsupporting{GPT-4} & 87.7 & 2.6 &  85.2 & $\wr$ 89.5 & $\wr$ 90.1 &  86.1} \\
+\closedtrack{7-11 & \nonsupporting{CommandR-plus} & 86.9 & 2.9 &  85.2 &  87.5 &  88.6 & $\wr$ 86.2} \\
+\opentrack{8-11 & IOL-Research & 86.5 & 2.8 &  84.7 & $\wr$ 90.4 &  86.3 &  84.4} \\
+8-11 & SCIR-MT & 85.4 & 3.2 & $\wr$ 85.0 & $\wr$ 92.4 &  82.2 &  82.1 \\
+8-12 & CUNI-DocTransformer & 84.3 & 4.4 &  83.1 &  90.7 &  80.9 & $\wr$ 82.4 \\
+\opentrack{11-12 & Aya23 & 84.1 & 4.3 &  81.6 &  89.9 & $\wr$ 84.9 &  80.2} \\
 \midrule
-13-14 & CUNI-GA & 82.1 & 2.3 &  82.8 &  88.5 &  81.7 & $\vee$ 75.2 \\
-\opentrack{13-14 & IKUN & 81.8 & 3.9 &  80.2 &  87.0 &  82.2 &  77.7} \\
+13-14 & CUNI-GA & 82.1 & 2.3 & $\wr$ 82.8 &  88.5 &  81.7 &  75.2 \\
+\opentrack{13-14 & IKUN & 81.8 & 3.9 &  80.2 &  87.0 & $\wr$ 82.2 & $\wr$ 77.7} \\
 \midrule
-\opentrack{15-15 & \nonsupporting{Llama3-70B} & 77.4 & 4.1 &  65.4 &  83.0 & $\Uparrow$ 82.4 & $\wedge$ 78.8} \\
+\opentrack{15-15 & \nonsupporting{Llama3-70B} & 77.4 & 4.1 &  65.4 &  83.0 & $\wr$ 82.4 & $\wr$ 78.8} \\
 \midrule
-16-16 & IKUN-C & 75.2 & 4.7 &  70.5 &  77.7 &  77.1 &  75.7 \\
+16-16 & IKUN-C & 75.2 & 4.7 & $\wr$ 70.5 &  77.7 &  77.1 &  75.7 \\
 \midrule
 \closedtrack{ & TranssionMT & - & 3.5 &  - &  - &  - &  -} \\
 \closedtrack{ & ONLINE-A & - & 3.6 &  - &  - &  - &  -} \\
@@ -85,25 +86,25 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{1-10 & GPT-4 & -1.7 & 1.8 &  -0.9 & $\Downarrow$ -1.4 & $\vee$ -0.9 & $\vee$ -3.5} \\
-\closedtrack{1-7 & Dubformer & -1.8 & 1.8 &  -1.1 &  -1.3 &  -0.6 & $\Downarrow$ -4.2} \\
-\closedtrack{1-9 & Unbabel-Tower70B & -1.9 & 1.0 & $\vee$ -1.5 & $\Downarrow$ -2.0 &  -0.8 &  -3.4} \\
-\closedtrack{3-10 & ONLINE-B & -1.9 & 1.8 &  -1.5 & $\Downarrow$ -1.5 & $\Downarrow$ -1.2 &  -3.5} \\
-\closedtrack{1-10 & TranssionMT & -2.0 & 1.8 & $\vee$ -1.6 & $\wedge$ -1.2 & $\vee$ -1.2 &  -3.8} \\
-\closedtrack{1-8 & HUMAN-B & -2.0 & - & $\Uparrow$ -1.0 &  -1.4 & $\wedge$ -0.8 & $\Downarrow$ -4.9} \\
-\closedtrack{7-11 & Mistral-Large & -2.1 & 2.0 &  -1.6 & $\Downarrow$ -1.9 &  -1.1 &  -3.9} \\
-\closedtrack{8-12 & CommandR-plus & -2.3 & 2.0 &  -2.0 & $\Downarrow$ -2.4 & $\wedge$ -1.1 & $\wedge$ -3.9} \\
-\closedtrack{11-13 & ONLINE-W & -2.3 & 2.2 &  -2.3 & $\Uparrow$ -1.3 & $\vee$ -1.7 &  -4.0} \\
-\closedtrack{2-9 & Claude-3.5 & -2.4 & 1.9 & $\Uparrow$ -1.2 & $\Uparrow$ -1.0 &  -1.2 & $\Downarrow$ -6.0} \\
-\closedtrack{4-11 & HUMAN-A & -2.6 & - &  -2.6 &  -1.8 & $\Uparrow$ -1.0 &  -4.8} \\
-\opentrack{12-13 & IOL-Research & -2.6 & 2.3 &  -2.3 & $\wedge$ -1.6 &  -1.6 &  -4.8} \\
-\closedtrack{1-6 & Gemini-1.5-Pro & -2.8 & 2.2 & $\vee$ -5.1 & $\Uparrow$ -1.3 &  -1.9 & $\Uparrow$ -2.8} \\
+\closedtrack{1-10 & GPT-4 & -1.7 & 1.8 &  -0.9 &  -1.4 &  -0.9 &  -3.5} \\
+\closedtrack{1-7 & Dubformer & -1.8 & 1.8 &  -1.1 & $\wr$ -1.3 & $\wr$ -0.6 &  -4.2} \\
+\closedtrack{1-9 & Unbabel-Tower70B & -1.9 & 1.0 &  -1.5 &  -2.0 &  -0.8 & $\wr$ -3.4} \\
+\closedtrack{3-10 & ONLINE-B & -1.9 & 1.8 & $\wr$ -1.5 & $\wr$ -1.5 &  -1.2 &  -3.5} \\
+\closedtrack{1-10 & TranssionMT & -2.0 & 1.8 &  -1.6 & $\wr$ -1.2 & $\wr$ -1.2 &  -3.8} \\
+\closedtrack{1-8 & HUMAN-B & -2.0 & - & $\wr$ -1.0 &  -1.4 & $\wr$ -0.8 &  -4.9} \\
+\closedtrack{7-11 & Mistral-Large & -2.1 & 2.0 &  -1.6 &  -1.9 &  -1.1 & $\wr$ -3.9} \\
+\closedtrack{8-12 & CommandR-plus & -2.3 & 2.0 &  -2.0 &  -2.4 & $\wr$ -1.1 & $\wr$ -3.9} \\
+\closedtrack{11-13 & ONLINE-W & -2.3 & 2.2 &  -2.3 & $\wr$ -1.3 &  -1.7 &  -4.0} \\
+\closedtrack{2-9 & Claude-3.5 & -2.4 & 1.9 & $\wr$ -1.2 & $\wr$ -1.0 & $\wr$ -1.2 &  -6.0} \\
+\closedtrack{4-11 & HUMAN-A & -2.6 & - &  -2.6 &  -1.8 & $\wr$ -1.0 & $\wr$ -4.8} \\
+\opentrack{12-13 & IOL-Research & -2.6 & 2.3 & $\wr$ -2.3 & $\wr$ -1.6 &  -1.6 &  -4.8} \\
+\closedtrack{1-6 & Gemini-1.5-Pro & -2.8 & 2.2 &  -5.1 & $\wr$ -1.3 &  -1.9 & $\wr$ -2.8} \\
 \midrule
-\opentrack{14-15 & Aya23 & -3.3 & 2.7 &  -2.8 &  -2.7 &  -2.2 &  -5.5} \\
-\closedtrack{14-15 & ONLINE-A & -3.5 & 3.0 &  -3.1 & $\Uparrow$ -1.9 &  -2.3 &  -6.8} \\
+\opentrack{14-15 & Aya23 & -3.3 & 2.7 & $\wr$ -2.8 &  -2.7 &  -2.2 &  -5.5} \\
+\closedtrack{14-15 & ONLINE-A & -3.5 & 3.0 &  -3.1 & $\wr$ -1.9 &  -2.3 &  -6.8} \\
 \midrule
-\opentrack{16-17 & IKUN & -4.4 & 3.0 &  -4.3 & $\vee$ -4.3 &  -2.4 &  -6.9} \\
-\opentrack{16-17 & \nonsupporting{Llama3-70B} & -4.5 & 2.5 &  -6.3 &  -2.9 &  -2.3 & $\wedge$ -6.6} \\
+\opentrack{16-17 & IKUN & -4.4 & 3.0 &  -4.3 &  -4.3 &  -2.4 &  -6.9} \\
+\opentrack{16-17 & \nonsupporting{Llama3-70B} & -4.5 & 2.5 &  -6.3 & $\wr$ -2.9 & $\wr$ -2.3 & $\wr$ -6.6} \\
 \midrule
 18-18 & IKUN-C & -6.2 & 3.8 &  -8.5 &  -3.4 &  -3.3 &  -9.6 \\
 \midrule
@@ -130,24 +131,24 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{1-1 & HUMAN-A & 95.3 & - & $\vee$ 95.2 &  96.2 &  95.5 &  94.1} \\
+\closedtrack{1-1 & HUMAN-A & 95.3 & - &  95.2 &  96.2 &  95.5 &  94.1} \\
 \midrule
-\closedtrack{2-2 & Dubformer & 93.4 & 2.0 &  95.3 &  94.5 &  94.4 &  89.4} \\
+\closedtrack{2-2 & Dubformer & 93.4 & 2.0 & $\wr$ 95.3 &  94.5 &  94.4 &  89.4} \\
 \midrule
 \closedtrack{3-3 & GPT-4 & 91.9 & 1.9 &  93.5 &  94.0 &  93.2 &  87.0} \\
 \midrule
-\opentrack{4-4 & IOL-Research & 91.4 & 2.3 & $\wedge$ 96.3 & $\vee$ 92.5 & $\vee$ 90.9 &  86.0} \\
+\opentrack{4-4 & IOL-Research & 91.4 & 2.3 & $\wr$ 96.3 &  92.5 &  90.9 &  86.0} \\
 \midrule
-\closedtrack{5-9 & Mistral-Large & 89.3 & 2.2 &  90.5 & $\Downarrow$ 90.4 &  91.0 &  85.2} \\
-\closedtrack{5-9 & Unbabel-Tower70B & 88.9 & 1.0 & $\Downarrow$ 86.2 & $\wedge$ 93.7 & $\wedge$ 91.1 & $\vee$ 84.6} \\
-\closedtrack{5-8 & Claude-3.5 & 88.8 & 2.1 & $\wedge$ 91.5 & $\wedge$ 92.8 &  90.4 & $\vee$ 80.5} \\
-\closedtrack{5-9 & Gemini-1.5-Pro & 88.8 & 2.4 &  89.6 &  92.3 & $\vee$ 87.0 & $\Uparrow$ 86.2} \\
-\closedtrack{6-9 & CommandR-plus & 88.3 & 2.1 &  88.2 &  89.3 & $\wedge$ 90.8 & $\wedge$ 84.8} \\
+\closedtrack{5-9 & Mistral-Large & 89.3 & 2.2 &  90.5 &  90.4 & $\wr$ 91.0 &  85.2} \\
+\closedtrack{5-9 & Unbabel-Tower70B & 88.9 & 1.0 &  86.2 & $\wr$ 93.7 & $\wr$ 91.1 &  84.6} \\
+\closedtrack{5-8 & Claude-3.5 & 88.8 & 2.1 & $\wr$ 91.5 &  92.8 &  90.4 &  80.5} \\
+\closedtrack{5-9 & Gemini-1.5-Pro & 88.8 & 2.4 &  89.6 &  92.3 &  87.0 & $\wr$ 86.2} \\
+\closedtrack{6-9 & CommandR-plus & 88.3 & 2.1 &  88.2 &  89.3 & $\wr$ 90.8 &  84.8} \\
 \midrule
-\opentrack{10-10 & \nonsupporting{Llama3-70B} & 87.2 & 2.6 & $\wedge$ 89.4 & $\vee$ 87.1 &  87.9 &  84.2} \\
+\opentrack{10-10 & \nonsupporting{Llama3-70B} & 87.2 & 2.6 & $\wr$ 89.4 &  87.1 &  87.9 &  84.2} \\
 \midrule
-\closedtrack{11-12 & ONLINE-B & 85.6 & 2.7 &  87.4 &  88.6 &  86.8 &  79.4} \\
-\opentrack{11-12 & IKUN & 84.7 & 2.8 &  85.4 & $\Uparrow$ 92.4 &  82.8 &  78.3} \\
+\closedtrack{11-12 & ONLINE-B & 85.6 & 2.7 &  87.4 & $\wr$ 88.6 &  86.8 &  79.4} \\
+\opentrack{11-12 & IKUN & 84.7 & 2.8 &  85.4 & $\wr$ 92.4 &  82.8 &  78.3} \\
 \midrule
 13-13 & IKUN-C & 80.4 & 3.4 &  83.3 &  85.6 &  79.0 &  73.6 \\
 \midrule
@@ -175,20 +176,20 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{2-4 & TranssionMT & 91.3 & 1.3 &  94.0 &  93.0 & $\vee$ 89.8 & $\vee$ 88.2} \\
-\closedtrack{2-5 & Unbabel-Tower70B & 90.5 & 1.0 & $\vee$ 90.9 &  92.7 &  90.7 & $\vee$ 87.7} \\
-\closedtrack{1-1 & \nonsupporting{Claude-3.5} & 90.2 & 1.2 & $\wedge$ 95.4 & $\wedge$ 93.6 &  91.0 & $\Downarrow$ 81.1} \\
-\closedtrack{2-4 & ONLINE-B & 90.1 & 1.4 &  91.8 & $\vee$ 90.4 & $\wedge$ 91.3 & $\vee$ 86.9} \\
-\closedtrack{4-5 & \nonsupporting{Gemini-1.5-Pro} & 90.0 & 1.6 &  90.3 &  91.9 &  89.4 & $\Uparrow$ 88.3} \\
+\closedtrack{2-4 & TranssionMT & 91.3 & 1.3 &  94.0 &  93.0 &  89.8 &  88.2} \\
+\closedtrack{2-5 & Unbabel-Tower70B & 90.5 & 1.0 &  90.9 &  92.7 & $\wr$ 90.7 &  87.7} \\
+\closedtrack{1-1 & \nonsupporting{Claude-3.5} & 90.2 & 1.2 & $\wr$ 95.4 & $\wr$ 93.6 & $\wr$ 91.0 &  81.1} \\
+\closedtrack{2-4 & ONLINE-B & 90.1 & 1.4 &  91.8 &  90.4 & $\wr$ 91.3 & $\wr$ 86.9} \\
+\closedtrack{4-5 & \nonsupporting{Gemini-1.5-Pro} & 90.0 & 1.6 &  90.3 & $\wr$ 91.9 &  89.4 & $\wr$ 88.3} \\
 \midrule
-\closedtrack{6-6 & \nonsupporting{GPT-4} & 88.5 & 2.1 &  89.9 &  90.4 &  89.2 & $\vee$ 84.4} \\
+\closedtrack{6-6 & \nonsupporting{GPT-4} & 88.5 & 2.1 &  89.9 &  90.4 &  89.2 &  84.4} \\
 \midrule
-\closedtrack{7-8 & HUMAN-A & 88.5 & - &  88.8 &  88.1 &  88.9 & $\Uparrow$ 88.2} \\
-\opentrack{7-8 & IOL-Research & 87.2 & 2.1 &  87.2 &  88.9 &  87.7 &  84.9} \\
+\closedtrack{7-8 & HUMAN-A & 88.5 & - &  88.8 &  88.1 &  88.9 & $\wr$ 88.2} \\
+\opentrack{7-8 & IOL-Research & 87.2 & 2.1 &  87.2 & $\wr$ 88.9 &  87.7 &  84.9} \\
 \midrule
-\opentrack{9-9 & \nonsupporting{Llama3-70B} & 86.7 & 2.1 &  86.4 &  87.1 &  86.1 & $\Uparrow$ 87.1} \\
+\opentrack{9-9 & \nonsupporting{Llama3-70B} & 86.7 & 2.1 &  86.4 &  87.1 &  86.1 & $\wr$ 87.1} \\
 \midrule
-\opentrack{10-10 & Aya23 & 84.7 & 3.2 &  83.3 &  86.9 &  83.1 & $\wedge$ 85.7} \\
+\opentrack{10-10 & Aya23 & 84.7 & 3.2 &  83.3 &  86.9 &  83.1 &  85.7} \\
 \midrule
 11-11 & IKUN-C & 70.7 & 5.5 &  71.2 &  59.2 &  80.2 &  72.4 \\
 \midrule
@@ -216,17 +217,17 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \closedtrack{1-1 & HUMAN-A & 93.1 & - &  92.2 &  92.6 &  95.0 &  92.4} \\
 \midrule
 \closedtrack{2-3 & Dubformer & 84.3 & 2.5 &  84.1 &  83.1 &  87.5 &  82.5} \\
-\closedtrack{2-3 & \nonsupporting{Claude-3.5} & 81.9 & 2.3 &  80.2 &  83.9 &  87.2 &  76.4} \\
+\closedtrack{2-3 & \nonsupporting{Claude-3.5} & 81.9 & 2.3 &  80.2 & $\wr$ 83.9 &  87.2 &  76.4} \\
 \midrule
-\closedtrack{4-4 & Unbabel-Tower70B & 80.2 & 1.0 &  76.6 &  80.6 &  84.3 &  79.2} \\
+\closedtrack{4-4 & Unbabel-Tower70B & 80.2 & 1.0 &  76.6 &  80.6 &  84.3 & $\wr$ 79.2} \\
 \midrule
 \opentrack{5-5 & AMI & 73.3 & 3.7 &  75.2 &  72.8 &  74.1 &  71.1} \\
 \midrule
-\opentrack{6-6 & IKUN & 71.0 & 3.2 &  66.8 &  74.7 &  73.6 &  69.1} \\
+\opentrack{6-6 & IKUN & 71.0 & 3.2 &  66.8 & $\wr$ 74.7 &  73.6 &  69.1} \\
 \midrule
-\closedtrack{7-8 & ONLINE-B & 68.0 & 4.2 &  70.5 & $\vee$ 59.4 &  74.0 &  67.9} \\
-\closedtrack{7-9 & GPT-4 & 66.3 & 3.4 &  66.5 &  65.5 &  69.5 &  63.9} \\
-8-9 & IKUN-C & 65.2 & 3.7 &  59.6 & $\wedge$ 68.2 &  69.3 &  63.8 \\
+\closedtrack{7-8 & ONLINE-B & 68.0 & 4.2 & $\wr$ 70.5 &  59.4 & $\wr$ 74.0 &  67.9} \\
+\closedtrack{7-9 & GPT-4 & 66.3 & 3.4 &  66.5 & $\wr$ 65.5 &  69.5 &  63.9} \\
+8-9 & IKUN-C & 65.2 & 3.7 &  59.6 & $\wr$ 68.2 &  69.3 &  63.8 \\
 \midrule
 \opentrack{10-10 & IOL-Research & 58.0 & 4.3 &  49.4 &  59.6 &  61.4 &  61.4} \\
 \midrule
@@ -254,21 +255,21 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{1-3 & HUMAN-A & 91.8 & - &  92.4 & $\vee$ 93.0 & $\Downarrow$ 89.5 &  92.4} \\
-\closedtrack{4-5 & ONLINE-B & 91.1 & 1.4 & $\vee$ 91.7 & $\vee$ 92.6 &  91.1 & $\vee$ 88.9} \\
-\closedtrack{1-4 & CommandR-plus & 91.0 & 1.9 &  92.2 & $\wedge$ 93.7 & $\Downarrow$ 89.5 & $\vee$ 88.5} \\
-\closedtrack{5-6 & GPT-4 & 90.8 & 1.7 &  91.9 & $\Downarrow$ 91.3 &  89.9 & $\wedge$ 90.1} \\
-\closedtrack{1-3 & Claude-3.5 & 90.8 & 1.5 &  91.4 &  92.8 & $\Uparrow$ 91.3 & $\vee$ 87.6} \\
-\closedtrack{3-6 & Gemini-1.5-Pro & 90.0 & 1.7 &  91.1 &  92.2 & $\Downarrow$ 88.1 &  88.7} \\
+\closedtrack{1-3 & HUMAN-A & 91.8 & - &  92.4 &  93.0 &  89.5 &  92.4} \\
+\closedtrack{4-5 & ONLINE-B & 91.1 & 1.4 &  91.7 &  92.6 & $\wr$ 91.1 &  88.9} \\
+\closedtrack{1-4 & CommandR-plus & 91.0 & 1.9 & $\wr$ 92.2 & $\wr$ 93.7 &  89.5 &  88.5} \\
+\closedtrack{5-6 & GPT-4 & 90.8 & 1.7 &  91.9 &  91.3 & $\wr$ 89.9 & $\wr$ 90.1} \\
+\closedtrack{1-3 & Claude-3.5 & 90.8 & 1.5 &  91.4 & $\wr$ 92.8 & $\wr$ 91.3 &  87.6} \\
+\closedtrack{3-6 & Gemini-1.5-Pro & 90.0 & 1.7 &  91.1 &  92.2 &  88.1 & $\wr$ 88.7} \\
 \midrule
-\closedtrack{7-10 & Unbabel-Tower70B & 89.7 & 1.0 & $\Downarrow$ 88.2 &  91.6 &  89.8 & $\Uparrow$ 89.2} \\
-\opentrack{7-10 & IOL-Research & 89.7 & 2.3 &  91.0 & $\vee$ 90.6 & $\Uparrow$ 90.3 & $\vee$ 86.9} \\
-\opentrack{7-10 & Aya23 & 89.7 & 2.3 &  90.1 & $\wedge$ 92.1 &  88.4 & $\wedge$ 87.9} \\
-7-10 & NTTSU & 89.4 & 1.9 &  90.0 & $\Uparrow$ 93.2 &  88.4 &  86.2 \\
+\closedtrack{7-10 & Unbabel-Tower70B & 89.7 & 1.0 &  88.2 &  91.6 & $\wr$ 89.8 & $\wr$ 89.2} \\
+\opentrack{7-10 & IOL-Research & 89.7 & 2.3 & $\wr$ 91.0 &  90.6 & $\wr$ 90.3 &  86.9} \\
+\opentrack{7-10 & Aya23 & 89.7 & 2.3 &  90.1 & $\wr$ 92.1 &  88.4 & $\wr$ 87.9} \\
+7-10 & NTTSU & 89.4 & 1.9 &  90.0 & $\wr$ 93.2 &  88.4 &  86.2 \\
 \midrule
-11-11 & Team-J & 88.5 & 1.9 &  85.0 &  90.1 & $\Uparrow$ 91.3 & $\wedge$ 87.5 \\
+11-11 & Team-J & 88.5 & 1.9 &  85.0 &  90.1 & $\wr$ 91.3 & $\wr$ 87.5 \\
 \midrule
-\opentrack{12-12 & \nonsupporting{Llama3-70B} & 86.8 & 2.6 & $\wedge$ 89.3 &  89.8 &  85.2 &  82.7} \\
+\opentrack{12-12 & \nonsupporting{Llama3-70B} & 86.8 & 2.6 & $\wr$ 89.3 &  89.8 &  85.2 &  82.7} \\
 \midrule
 13-13 & IKUN-C & 81.7 & 3.9 &  77.5 &  88.5 &  81.2 &  79.8 \\
 \midrule
@@ -291,29 +292,29 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{table*}
 \centering
 \small
-{\bf{English-Russian (609 segments per system)}}\\
+{\bf{English-Russian (634 segments per system)}}\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{1-4 & Dubformer & 89.1 & 1.9 & $\vee$ 90.5 & $\vee$ 88.5 &  92.0 &  85.2} \\
-\closedtrack{1-5 & HUMAN-A & 88.8 & - &  93.3 & $\vee$ 88.2 &  87.4 &  86.3} \\
-\closedtrack{1-4 & Claude-3.5 & 88.2 & 2.0 & $\wedge$ 94.1 & $\wedge$ 92.7 &  85.7 & $\Downarrow$ 80.2} \\
-\closedtrack{1-5 & Unbabel-Tower70B & 88.0 & 1.0 & $\Downarrow$ 87.5 &  91.2 & $\wedge$ 90.2 &  83.2} \\
-\closedtrack{3-5 & Yandex & 86.8 & 1.9 &  89.6 & $\wedge$ 91.8 & $\Downarrow$ 83.6 &  82.0} \\
+\closedtrack{1-5 & HUMAN-A & 89.2 & - &  94.0 &  88.3 &  87.7 &  86.6} \\
+\closedtrack{1-4 & Dubformer & 89.1 & 1.9 &  90.7 & $\wr$ 88.5 & $\wr$ 92.1 &  84.9} \\
+\closedtrack{1-4 & Claude-3.5 & 88.2 & 2.0 & $\wr$ 94.1 & $\wr$ 93.1 &  85.7 &  80.0} \\
+\closedtrack{1-5 & Unbabel-Tower70B & 88.1 & 1.0 &  87.5 &  91.2 & $\wr$ 90.6 & $\wr$ 83.2} \\
+\closedtrack{3-5 & Yandex & 87.0 & 1.9 & $\wr$ 89.6 & $\wr$ 91.8 &  84.5 &  82.0} \\
 \midrule
-\closedtrack{6-7 & Gemini-1.5-Pro & 85.3 & 2.3 & $\wedge$ 90.7 & $\Downarrow$ 84.9 & $\Downarrow$ 83.1 & $\wedge$ 82.5} \\
-\closedtrack{7-9 & GPT-4 & 85.1 & 2.3 &  89.3 & $\vee$ 85.4 &  85.0 &  80.5} \\
-\closedtrack{7-9 & \nonsupporting{CommandR-plus} & 84.2 & 2.4 & $\vee$ 86.7 & $\vee$ 84.5 & $\wedge$ 85.7 &  80.1} \\
-\closedtrack{6-9 & ONLINE-G & 84.2 & 2.2 & $\wedge$ 88.2 & $\wedge$ 87.1 &  84.9 &  76.4} \\
+\closedtrack{6-8 & Gemini-1.5-Pro & 85.5 & 2.3 & $\wr$ 90.7 &  84.9 &  83.4 & $\wr$ 82.9} \\
+\closedtrack{6-9 & GPT-4 & 85.0 & 2.3 &  89.3 & $\wr$ 85.4 & $\wr$ 84.6 &  80.7} \\
+\closedtrack{6-9 & ONLINE-G & 84.6 & 2.2 &  88.3 & $\wr$ 88.8 &  84.6 &  76.6} \\
+\closedtrack{7-9 & \nonsupporting{CommandR-plus} & 84.3 & 2.4 &  86.7 &  84.5 & $\wr$ 85.7 & $\wr$ 80.5} \\
 \midrule
-\opentrack{10-10 & IOL-Research & 82.9 & 2.6 &  87.3 & $\wedge$ 86.4 & $\wedge$ 85.0 &  72.9} \\
+\opentrack{10-10 & IOL-Research & 82.1 & 2.6 &  84.8 & $\wr$ 86.4 &  84.2 &  73.1} \\
 \midrule
-\opentrack{11-12 & IKUN & 79.2 & 3.2 &  80.2 & $\Uparrow$ 87.2 &  78.8 &  70.4} \\
-\opentrack{11-12 & Aya23 & 78.3 & 3.3 &  77.8 &  82.2 &  78.0 & $\wedge$ 75.1} \\
+\opentrack{11-12 & IKUN & 79.2 & 3.2 &  80.2 & $\wr$ 87.2 &  78.5 &  70.9} \\
+\opentrack{11-12 & Aya23 & 78.6 & 3.3 &  77.8 &  82.9 & $\wr$ 78.5 & $\wr$ 75.3} \\
 \midrule
-\opentrack{13-13 & \nonsupporting{Llama3-70B} & 76.2 & 3.1 &  79.1 &  80.1 &  76.6 &  68.9} \\
+\opentrack{13-13 & \nonsupporting{Llama3-70B} & 75.7 & 3.1 &  77.0 &  80.1 &  76.3 &  69.5} \\
 \midrule
-14-14 & IKUN-C & 69.4 & 3.9 &  63.7 &  78.6 &  72.7 &  62.7 \\
+14-14 & IKUN-C & 69.8 & 3.9 &  65.1 &  78.3 &  72.9 &  62.6 \\
 \midrule
 \closedtrack{ & ONLINE-W & - & 2.6 &  - &  - &  - &  -} \\
 \closedtrack{ & \nonsupporting{Mistral-Large} & - & 2.7 &  - &  - &  - &  -} \\
@@ -338,18 +339,18 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{1-3 & Claude-3.5 & 90.5 & 2.0 &  93.2 &  93.9 &  92.2 & $\Downarrow$ 82.7} \\
-\closedtrack{1-3 & Unbabel-Tower70B & 89.8 & 1.0 &  92.5 &  92.8 &  91.1 & $\vee$ 82.9} \\
-\closedtrack{1-3 & Dubformer & 89.0 & 1.8 & $\vee$ 84.4 &  91.3 & $\wedge$ 94.3 & $\wedge$ 85.9} \\
+\closedtrack{1-3 & Claude-3.5 & 90.5 & 2.0 &  93.2 &  93.9 &  92.2 &  82.7} \\
+\closedtrack{1-3 & Unbabel-Tower70B & 89.8 & 1.0 &  92.5 &  92.8 &  91.1 & $\wr$ 82.9} \\
+\closedtrack{1-3 & Dubformer & 89.0 & 1.8 &  84.4 &  91.3 & $\wr$ 94.3 & $\wr$ 85.9} \\
 \midrule
-\closedtrack{4-6 & HUMAN-A & 87.3 & - &  89.6 &  91.5 & $\vee$ 83.8 &  84.1} \\
-\closedtrack{4-6 & Gemini-1.5-Pro & 87.1 & 2.2 & $\wedge$ 90.1 & $\Downarrow$ 88.8 &  85.3 & $\wedge$ 84.4} \\
-\closedtrack{4-7 & ONLINE-W & 86.0 & 2.1 &  86.7 & $\vee$ 88.9 & $\wedge$ 86.8 &  81.8} \\
-\closedtrack{6-9 & GPT-4 & 84.6 & 2.3 &  81.2 & $\wedge$ 90.3 &  84.5 &  82.4} \\
-\closedtrack{7-9 & \nonsupporting{CommandR-plus} & 83.2 & 2.3 & $\vee$ 79.6 &  89.1 &  83.6 &  80.4} \\
-\opentrack{7-9 & IOL-Research & 83.2 & 2.4 &  80.6 & $\wedge$ 90.2 &  83.1 &  78.8} \\
+\closedtrack{4-6 & HUMAN-A & 87.3 & - & $\wr$ 89.6 & $\wr$ 91.5 &  83.8 &  84.1} \\
+\closedtrack{4-6 & Gemini-1.5-Pro & 87.1 & 2.2 & $\wr$ 90.1 &  88.8 & $\wr$ 85.3 & $\wr$ 84.4} \\
+\closedtrack{4-7 & ONLINE-W & 86.0 & 2.1 &  86.7 & $\wr$ 88.9 & $\wr$ 86.8 &  81.8} \\
+\closedtrack{6-9 & GPT-4 & 84.6 & 2.3 &  81.2 & $\wr$ 90.3 &  84.5 & $\wr$ 82.4} \\
+\closedtrack{7-9 & \nonsupporting{CommandR-plus} & 83.2 & 2.3 &  79.6 &  89.1 &  83.6 &  80.4} \\
+\opentrack{7-9 & IOL-Research & 83.2 & 2.4 & $\wr$ 80.6 & $\wr$ 90.2 &  83.1 &  78.8} \\
 \midrule
-\opentrack{10-10 & IKUN & 78.4 & 2.8 & $\wedge$ 83.2 &  88.2 &  72.7 &  69.7} \\
+\opentrack{10-10 & IKUN & 78.4 & 2.8 & $\wr$ 83.2 &  88.2 &  72.7 &  69.7} \\
 \midrule
 11-11 & IKUN-C & 67.9 & 3.9 &  65.2 &  69.0 &  68.3 &  69.2 \\
 \midrule
@@ -371,25 +372,26 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 \begin{table*}
 \centering
 \small
-{\bf{English-Chinese (931 segments per system)}}\\
+{\bf{English-Chinese (1040 segments per system)}}\\
 \begin{tabular}{clcc|rrrr}
 Rank & System & Human & AutoRank & literary & news & social & speech\\
 \toprule
-\closedtrack{1-3 & HUMAN-A & 89.9 & - & $\vee$ 90.7 & $\Downarrow$ 89.9 &  91.8 & $\vee$ 87.2} \\
-\closedtrack{4-8 & ONLINE-B & 89.8 & 1.7 &  93.5 & $\Downarrow$ 88.7 &  90.6 & $\vee$ 86.2} \\
-\opentrack{4-8 & IOL-Research & 89.8 & 1.8 &  92.7 & $\vee$ 90.9 & $\Downarrow$ 89.3 & $\vee$ 86.1} \\
-\closedtrack{1-3 & Unbabel-Tower70B & 89.6 & 1.0 &  90.0 &  92.1 &  90.2 & $\vee$ 85.9} \\
-\closedtrack{3-8 & GPT-4 & 89.4 & 2.0 & $\vee$ 88.5 & $\vee$ 90.8 &  89.4 & $\Uparrow$ 88.9} \\
-\closedtrack{1-6 & Gemini-1.5-Pro & 89.1 & 1.8 & $\wedge$ 90.2 & $\Uparrow$ 92.6 & $\Downarrow$ 85.5 & $\Uparrow$ 88.0} \\
-\closedtrack{3-8 & Claude-3.5 & 88.6 & 1.7 &  89.7 & $\wedge$ 91.1 & $\wedge$ 89.8 & $\vee$ 83.7} \\
-\closedtrack{3-8 & CommandR-plus & 88.0 & 2.2 & $\vee$ 84.0 & $\Uparrow$ 91.3 & $\Uparrow$ 90.2 & $\Uparrow$ 86.7} \\
+\closedtrack{1-7 & ONLINE-B & 89.8 & 1.7 &  92.8 &  89.6 &  90.7 &  86.0} \\
+\closedtrack{1-6 & HUMAN-A & 89.6 & - &  90.5 & $\wr$ 90.2 & $\wr$ 91.0 & $\wr$ 86.6} \\
+\closedtrack{1-4 & Unbabel-Tower70B & 89.5 & 1.0 &  90.1 & $\wr$ 92.0 &  90.0 &  85.9} \\
+\opentrack{7-8 & IOL-Research & 89.4 & 1.8 & $\wr$ 92.5 &  90.5 &  88.6 &  85.8} \\
+\closedtrack{2-7 & GPT-4 & 89.4 & 2.0 &  88.6 & $\wr$ 90.8 & $\wr$ 89.6 & $\wr$ 88.5} \\
+\closedtrack{1-7 & Gemini-1.5-Pro & 89.0 & 1.8 & $\wr$ 90.8 & $\wr$ 92.4 &  85.3 &  87.6} \\
+\closedtrack{2-6 & Claude-3.5 & 88.8 & 1.7 &  90.3 &  91.2 & $\wr$ 89.9 &  83.9} \\
+\closedtrack{4-8 & CommandR-plus & 87.8 & 2.2 &  83.6 &  90.8 & $\wr$ 90.6 & $\wr$ 86.2} \\
 \midrule
-\opentrack{9-11 & \nonsupporting{Llama3-70B} & 86.8 & 2.8 & $\wedge$ 88.9 & $\vee$ 86.8 &  87.2 &  84.1} \\
-9-10 & HW-TSC & 86.1 & 2.3 &  83.5 & $\Uparrow$ 92.9 &  85.1 &  82.9 \\
-\opentrack{10-12 & Aya23 & 84.5 & 3.0 &  81.5 &  88.0 & $\wedge$ 86.6 &  81.9} \\
-\opentrack{11-12 & IKUN & 84.2 & 3.1 & $\wedge$ 85.5 & $\wedge$ 88.5 &  82.2 &  80.7} \\
+\opentrack{9-10 & \nonsupporting{Llama3-70B} & 86.7 & 2.8 & $\wr$ 88.7 &  86.6 &  87.1 &  84.2} \\
+9-10 & HW-TSC & 85.8 & 2.3 &  85.1 & $\wr$ 91.9 &  84.4 &  81.7 \\
 \midrule
-13-13 & IKUN-C & 82.2 & 3.5 &  80.6 &  86.0 &  82.7 &  79.5 \\
+\opentrack{11-12 & IKUN & 84.4 & 3.1 & $\wr$ 85.5 &  88.7 &  82.2 &  81.2} \\
+\opentrack{11-12 & Aya23 & 84.3 & 3.0 &  81.5 &  88.3 & $\wr$ 86.2 &  81.2} \\
+\midrule
+13-13 & IKUN-C & 81.5 & 3.5 &  78.5 &  84.9 &  82.7 &  79.9 \\
 \midrule
 \closedtrack{ & ONLINE-W & - & 2.2 &  - &  - &  - &  -} \\
 \closedtrack{ & \nonsupporting{Mistral-Large} & - & 2.8 &  - &  - &  - &  -} \\
@@ -413,23 +415,23 @@ Rank & System & Human & AutoRank & literary & news & social & speech\\
 Rank & System & Human & AutoRank & literary & news & speech\\
 \toprule
 \closedtrack{1-3 & Claude-3.5 & -1.4 & 1.7 &  -0.5 &  -0.7 &  -3.0} \\
-\closedtrack{1-2 & HUMAN-A & -1.6 & - &  -0.7 &  -0.7 &  -3.3} \\
-\closedtrack{3-6 & GPT-4 & -1.7 & 2.1 & $\vee$ -1.0 &  -0.8 &  -3.2} \\
-\closedtrack{2-5 & DLUT\_GTCOM & -1.7 & - & $\wedge$ -0.5 &  -1.1 &  -3.6} \\
-\closedtrack{4-7 & Unbabel-Tower70B & -1.9 & 1.0 &  -1.1 & $\vee$ -1.2 &  -3.5} \\
-\closedtrack{3-6 & Gemini-1.5-Pro & -2.1 & 1.9 & $\vee$ -1.6 & $\wedge$ -0.8 &  -3.7} \\
-\closedtrack{6-8 & CommandR-plus & -2.2 & 2.8 & $\wedge$ -0.8 &  -1.3 &  -4.5} \\
-\opentrack{7-8 & IOL-Research & -2.4 & 2.2 &  -1.4 & $\wedge$ -1.1 &  -4.8} \\
+\closedtrack{1-2 & HUMAN-A & -1.6 & - &  -0.7 & $\wr$ -0.7 &  -3.3} \\
+\closedtrack{3-6 & GPT-4 & -1.7 & 2.1 &  -1.0 &  -0.8 & $\wr$ -3.2} \\
+\closedtrack{2-5 & DLUT\_GTCOM & -1.7 & - & $\wr$ -0.5 &  -1.1 &  -3.6} \\
+\closedtrack{4-7 & Unbabel-Tower70B & -1.9 & 1.0 &  -1.1 &  -1.2 & $\wr$ -3.5} \\
+\closedtrack{3-6 & Gemini-1.5-Pro & -2.1 & 1.9 &  -1.6 & $\wr$ -0.8 &  -3.7} \\
+\closedtrack{6-8 & CommandR-plus & -2.2 & 2.8 & $\wr$ -0.8 &  -1.3 &  -4.5} \\
+\opentrack{7-8 & IOL-Research & -2.4 & 2.2 &  -1.4 & $\wr$ -1.1 &  -4.8} \\
 \midrule
-\opentrack{9-10 & \nonsupporting{Llama3-70B} & -3.4 & 3.1 &  -2.0 & $\vee$ -2.2 &  -6.1} \\
-\opentrack{9-10 & Aya23 & -3.5 & 3.7 &  -2.2 &  -1.8 &  -6.4} \\
+\opentrack{9-10 & \nonsupporting{Llama3-70B} & -3.4 & 3.1 &  -2.0 &  -2.2 &  -6.1} \\
+\opentrack{9-10 & Aya23 & -3.5 & 3.7 &  -2.2 & $\wr$ -1.8 &  -6.4} \\
 \midrule
 11-12 & Team-J & -4.5 & 2.8 &  -3.3 &  -2.0 &  -8.3 \\
-\opentrack{11-12 & NTTSU & -5.1 & 3.7 &  -2.8 &  -2.0 &  -10.5} \\
+\opentrack{11-12 & NTTSU & -5.1 & 3.7 & $\wr$ -2.8 &  -2.0 &  -10.5} \\
 \midrule
-\closedtrack{13-13 & ONLINE-B & -5.8 & 5.2 &  -4.3 &  -3.7 &  -9.5} \\
+\closedtrack{13-13 & ONLINE-B & -5.8 & 5.2 &  -4.3 &  -3.7 & $\wr$ -9.5} \\
 \midrule
-14-14 & IKUN-C & -7.7 & 5.5 &  -5.2 &  -3.4 &  -14.4 \\
+14-14 & IKUN-C & -7.7 & 5.5 &  -5.2 & $\wr$ -3.4 &  -14.4 \\
 \midrule
 15-15 & MSLC & -10.7 & 8.9 &  -9.2 &  -3.9 &  -19.1 \\
 \midrule

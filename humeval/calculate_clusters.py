@@ -43,6 +43,8 @@ def main(argv):
     if len(subdf) != len(df):
         df = subdf.agg({'overall': 'mean'}).reset_index()
 
+    df.to_csv('full_export.csv')
+
     # read file AutoRank.xlsx containing multiple sheets, each as individual df
     autoranks = pd.read_excel('AutoRank.xlsx', sheet_name=None)
 

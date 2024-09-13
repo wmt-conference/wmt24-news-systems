@@ -2,3 +2,4 @@
 *.tex
 *.pkl
 __pycache__
+full_export.*
