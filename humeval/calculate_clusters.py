@@ -3,6 +3,7 @@ import ipdb
 import os
 from absl import flags, app
 from tools import load_data, get_pvalues, get_ranks, generate_latex_tables, attach_resources
+from tables import generate_max_per_domain
 
 flags.DEFINE_bool('micro', False, 'Calculate micro average instead of macro over domains?')
 flags.DEFINE_bool('preload', False, 'Use pickle file?')
@@ -37,13 +38,12 @@ def main(argv):
         df = attach_resources(df)
         # save pickle
         df.to_pickle('data.pkl')
+        df.to_csv('full_export.csv')
     
     # if there are multiple ratings for the same segment, average them
     subdf = df.groupby(['annot_id', 'lp', 'system_id', 'orig_segment_id'])
     if len(subdf) != len(df):
         df = subdf.agg({'overall': 'mean'}).reset_index()
-
-    df.to_csv('full_export.csv')
 
     # read file AutoRank.xlsx containing multiple sheets, each as individual df
     autoranks = pd.read_excel('AutoRank.xlsx', sheet_name=None)
@@ -142,8 +142,8 @@ def main(argv):
     generate_latex_tables(results)
     generate_latex_tables(results_extended, extended=True)
 
-
-    
+    generate_max_per_domain(results)
+        
 
 if __name__ == '__main__':
     app.run(main)

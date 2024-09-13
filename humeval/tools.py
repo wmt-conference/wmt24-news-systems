@@ -360,7 +360,7 @@ def generate_latex_tables(results, extended=False):
     suffix = ''
     if extended:
         suffix = '_extended'
-    latex_file = open(f'generated_human_ranking{suffix}.tex', 'w')
+    latex_file = open(f'tables/generated_human_ranking{suffix}.tex', 'w')
     for lp in results:
         table = results[lp]
         if extended:
