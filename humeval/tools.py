@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from itertools import combinations
 import scipy.stats as stats
-from scipy.stats import wilcoxon
+from scipy.stats import wilcoxon, ranksums
 
 import warnings
 warnings.filterwarnings("ignore", message="Exact p-value calculation does not work if there are zeros")
@@ -30,7 +30,7 @@ langcode_mapping = {
 }
 
 def mqm_weights(row):
-    if row['severity'] == "No-error" or "Reinterpretation" in row['category']:
+    if row['severity'] == "No-error" or row['severity'] == "neutral" or "Reinterpretation" in row['category']:
         return 0
     category_errors = {
         'Non-translation!': -25,
@@ -53,8 +53,8 @@ def load_mqm(filename):
     df = df.rename(columns={"rater": "user_id", 'system': 'system_id', 'globalSegId': 'segment_id', 'doc': 'doc_id'})
     # mqm annotations contained CANARY string on first line which shifts everything by one
     df['segment_id'] = df['segment_id'].astype(int)
-    df['segment_id'] -= 1
-    df['segment_id'] = df['segment_id'].astype(str)
+    df['segment_id'] -= 1 # this is to remove CANARY string on the first place
+    df['segment_id'] -= 1 # because MQM uses 1-based indexing
     
     if "_ende." in filename:
         df['source_lang'] = "en"
@@ -62,16 +62,25 @@ def load_mqm(filename):
     elif "_jazh." in filename:
         df['source_lang'] = "ja"
         df['target_lang'] = "zh"
+    elif "_enes." in filename:
+        df['source_lang'] = "en"
+        df['target_lang'] = "es"
     else:
         raise Exception(f"unknown lnaguage pair")        
 
     df['error_spans'] = df.apply(lambda x: f"{{'severity':{x['severity']}, 'error_type:{x['category']}'}}", axis=1)
 
+    # replace nan in severity column with No-error
+    df['severity'] = df['severity'].fillna('No-error')
+
     df['overall'] = df.apply(lambda x: mqm_weights(x), axis=1)
+    df['method'] = "MQM"
 
     aggregation = {'overall': 'sum', 'error_spans': lambda x: ', '.join(x)}
-    df = df.groupby(['system_id', 'doc_id', 'segment_id', 'user_id', 'source_lang', 'target_lang'], as_index=
+    df = df.groupby(['system_id', 'doc_id', 'segment_id', 'user_id', 'source_lang', 'target_lang', 'method'], as_index=
 False).agg(aggregation)
+    # sort by segment_id then by system_id
+    df = df.sort_values(['system_id', 'segment_id'])
     
     return df
 
@@ -131,7 +140,7 @@ def load_all_resources():
     doms.to_latex('domain_distributions.tex', index=True)
 
     return sources, domains, systems
-     
+    
 
 def attach_resources(df):
     sources, domains, systems = load_all_resources()
@@ -143,13 +152,14 @@ def attach_resources(df):
 
     df.reset_index(drop=True, inplace=True)
     for index, row in df.iterrows():
-        # plus one is because original data dind't have CANARY STRING on first row
+        # plus one is because original data didn't have CANARY STRING on first row
         seg_id = int(row['segment_id']) + 1
 
         lp = row['lp']
         df.loc[index, 'source_segment'] = sources[lp][seg_id]
         df.loc[index, 'hypothesis_segment'] = systems[lp][row['system_id'].replace("_", "-")][seg_id]
         domain, doc = domains[lp][seg_id]
+        assert row['doc_id'] == doc, f"Problem in alignment {row['doc_id']} != {doc}"
         df.loc[index, 'domain_name'] = domain
         df.loc[index, 'document_name'] = doc
 
@@ -178,12 +188,15 @@ def load_data(filename, only_paired=False, is_mqm=False, remove_qc=True):
             df = df[~df['doc_id'].str.contains('#incomplete')]
 
             # #dup is used to fill the account with identical evaluation
-            df = df[~df['doc_id'].str.contains('#dup')]            
+            df = df[~df['doc_id'].str.contains('#dup')]    
+        df['method'] = "ESA"        
+    # drop canary string to unify MQM and ESA 
+    df = df[df['doc_id'] != 'canary']
         
     df['wave'] = filename
     df['lp'] = df['source_lang'] + '-' + df['target_lang']
-    df['annot_id'] = df['system_id'] + '-' + df['doc_id']+ '-' + df['segment_id'] + '-' + df['lp'] + '-' + df['wave']
-    df['orig_segment_id'] = df['doc_id']+ '-' + df['segment_id'] + '-' + df['lp']
+    df['annot_id'] = df['system_id'] + '-' + df['doc_id']+ '-' + df['segment_id'].astype(str) + '-' + df['lp'] + '-' + df['wave']
+    df['orig_segment_id'] = df['doc_id']+ '-' + df['segment_id'].astype(str) + '-' + df['lp']
 
     if not is_mqm:
         # if there are multiple ratings for the same segment by the same user, take the latest one. This happens when user changes their mind
@@ -224,6 +237,8 @@ def weighted_wilcoxon_signed_rank_test(df, x, y, macro_avg=True):
     pvalues = []
     for domain in df['domain_name'].unique():
         subdf = df[df['domain_name'] == domain]
+
+        # pvalues.append(wilcoxon(subdf[x], subdf[y], alternative="greater").pvalue)
         differences = (subdf[x] - subdf[y]).to_list()
         
         pvalues.append(wilcoxon(differences, alternative="greater").pvalue)
