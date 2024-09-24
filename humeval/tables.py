@@ -16,4 +16,4 @@ def generate_max_per_domain(results):
     # column average
     df.loc['Average'] = df.mean(axis=0)
 
-    df.to_latex('tables/max_per_domain.tex', float_format="%.1f")
+    df.to_latex('tables/max_per_lp_per_domains.tex', float_format="%.1f")
