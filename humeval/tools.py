@@ -157,7 +157,7 @@ def attach_resources(df):
 
         lp = row['lp']
         df.loc[index, 'source_segment'] = sources[lp][seg_id]
-        df.loc[index, 'hypothesis_segment'] = systems[lp][row['system_id'].replace("_", "-")][seg_id]
+        df.loc[index, 'hypothesis_segment'] = systems[lp][row['system_id']][seg_id]
         domain, doc = domains[lp][seg_id]
         assert row['doc_id'] == doc, f"Problem in alignment {row['doc_id']} != {doc}"
         df.loc[index, 'domain_name'] = domain
@@ -301,7 +301,7 @@ def get_ranks(pvalues, systems):
 
 
 def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_domains={}):
-    sysname = row['system_id'].replace('_', '\\_')
+    sysname = row['system_id']
     if sysname.startswith('ref'):
         sysname = sysname.replace('ref', 'HUMAN-')
     if supported=="No":

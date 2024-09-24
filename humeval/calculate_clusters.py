@@ -3,7 +3,7 @@ import ipdb
 import os
 from absl import flags, app
 from tools import load_data, get_pvalues, get_ranks, generate_latex_tables, attach_resources
-from tables import generate_max_per_domain
+from tables import generate_max_per_domain, generate_head_to_head
 
 flags.DEFINE_bool('micro', False, 'Calculate micro average instead of macro over domains?')
 flags.DEFINE_bool('preload', False, 'Use pickle file?')
@@ -51,6 +51,7 @@ def main(argv):
     total_cluster = 0
     results = {}
     results_extended = {}
+    head_to_head = {}
     for lp in sorted(df['lp'].unique()):
         lp_name = language_mapping[lp[0:2]] + '-' + language_mapping[lp[3:5]]
         df_lp = df[df['lp'] == lp]
@@ -93,6 +94,8 @@ def main(argv):
             avg_rating.at[index, 'cluster'] = current_cluster
 
             max_cutoff = max(max_cutoff, row['rank'][1])
+            
+        head_to_head[lp_name] = (avg_rating['overall'], pvalues, ranks, avg_rating['cluster'])
 
         # load autoranks
         # if systemname contain space, it is additional information; update column "Unnamed: 0" to drop everything past a space
@@ -120,7 +123,6 @@ def main(argv):
         lp_name = f"{lp_name} ({avg_annotations_per_system:0.0f} segments per system)"
         results[lp_name] = avg_rating
 
-
         # add data not used in human evaluation
         for index, row in autoranks[lp].iterrows():
             if index in avg_rating['system_id'].values:
@@ -143,6 +145,8 @@ def main(argv):
     generate_latex_tables(results_extended, extended=True)
 
     generate_max_per_domain(results)
+    generate_head_to_head(head_to_head)
+    
         
 
 if __name__ == '__main__':
