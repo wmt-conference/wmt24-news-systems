@@ -39,11 +39,12 @@ def main(argv):
         # save pickle
         df.to_pickle('data.pkl')
         df.to_csv('full_export.csv')
-    
+
     # if there are multiple ratings for the same segment, average them
     subdf = df.groupby(['annot_id', 'lp', 'system_id', 'orig_segment_id'])
     if len(subdf) != len(df):
         df = subdf.agg({'overall': 'mean'}).reset_index()
+        
 
     # read file AutoRank.xlsx containing multiple sheets, each as individual df
     autoranks = pd.read_excel('AutoRank.xlsx', sheet_name=None)
@@ -73,13 +74,12 @@ def main(argv):
         if FLAGS.micro:
             avg_rating['overall'] = df_lp.groupby('system_id')['overall'].mean().reset_index().set_index('system_id')['overall']
         
-
         # sort by overall rating
         avg_rating = avg_rating.sort_values('overall', ascending=False)
 
         pvalues = get_pvalues(df_lp, not FLAGS.micro)
-        ranks, wins, losses = get_ranks(pvalues, df_lp['system_id'].unique())
-
+        ranks, wins, losses = get_ranks(pvalues, avg_rating)
+        
         # merge ave_rating and ranks
         avg_rating['rank'] = avg_rating['system_id'].apply(lambda x: ranks[x])
         avg_rating['wins/losses'] = avg_rating['system_id'].apply(lambda x: f"{wins[x]}/{losses[x]}")

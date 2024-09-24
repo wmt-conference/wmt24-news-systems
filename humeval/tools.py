@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from itertools import combinations
 import scipy.stats as stats
-from scipy.stats import wilcoxon, ranksums
+from scipy.stats import wilcoxon, mannwhitneyu
 
 import warnings
 warnings.filterwarnings("ignore", message="Exact p-value calculation does not work if there are zeros")
@@ -232,17 +232,15 @@ def load_data(filename, only_paired=False, is_mqm=False, remove_qc=True):
 def weighted_wilcoxon_signed_rank_test(df, x, y, macro_avg=True):
     if not macro_avg:
         differences = (df[x] - df[y]).to_list()
-        return wilcoxon(differences, alternative="greater").pvalue
+        # return mannwhitneyu(df[x], df[y], alternative="two-sided").pvalue
+        return wilcoxon(differences, alternative="two-sided").pvalue
 
     pvalues = []
     for domain in df['domain_name'].unique():
         subdf = df[df['domain_name'] == domain]
 
-        # pvalues.append(wilcoxon(subdf[x], subdf[y], alternative="greater").pvalue)
         differences = (subdf[x] - subdf[y]).to_list()
-        
-        pvalues.append(wilcoxon(differences, alternative="greater").pvalue)
-
+        pvalues.append(wilcoxon(differences, alternative="two-sided").pvalue)
 
     # Stouffer's Z-score Method
     z_scores = [stats.norm.ppf(1 - p) for p in pvalues]
@@ -254,7 +252,7 @@ def weighted_wilcoxon_signed_rank_test(df, x, y, macro_avg=True):
 
 def get_pvalues(df, macro_avg=True):
     systems = df['system_id'].unique()
-    ranks = {}
+    pvalues = {}
     for system1, system2 in combinations(systems, 2):
         df_system1 = df[df['system_id'] == system1]
         df_system2 = df[df['system_id'] == system2]
@@ -272,13 +270,14 @@ def get_pvalues(df, macro_avg=True):
         # drop rows with NaN values
         df_system = df_system.dropna()
         
-        ranks[(system1, system2)] = weighted_wilcoxon_signed_rank_test(df_system, 'overall1', 'overall2', macro_avg=macro_avg)
-        ranks[(system2, system1)] = weighted_wilcoxon_signed_rank_test(df_system, 'overall2', 'overall1', macro_avg=macro_avg)
+        pvalues[(system1, system2)] = weighted_wilcoxon_signed_rank_test(df_system, 'overall1', 'overall2', macro_avg=macro_avg)
+        pvalues[(system2, system1)] = weighted_wilcoxon_signed_rank_test(df_system, 'overall2', 'overall1', macro_avg=macro_avg)
     
-    return ranks
+    return pvalues
 
 
-def get_ranks(pvalues, systems):
+def get_ranks(pvalues, df):
+    systems = df['system_id'].unique()
     wins = {}
     losses = {}
     ranks = {}
@@ -288,10 +287,12 @@ def get_ranks(pvalues, systems):
         for system2 in systems:
             if system1 == system2:
                 continue
+            
             if pvalues[(system1, system2)] < ALPHA_THRESHOLD:
-                wins[system1] += 1
-            if pvalues[(system2, system1)] < ALPHA_THRESHOLD:
-                losses[system1] += 1
+                if df.loc[system1, 'overall'] > df.loc[system2, 'overall']:
+                    wins[system1] += 1
+                else:
+                    losses[system1] += 1
 
         top_rank = losses[system1] + 1
         worst_rank = len(systems) - wins[system1]

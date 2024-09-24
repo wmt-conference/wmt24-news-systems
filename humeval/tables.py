@@ -33,7 +33,7 @@ def generate_head_to_head(data):
             table[system] = {}
             for system2 in scores.index:
                 diff = scores[system] - scores[system2]
-                if system == system2 or diff < 0:
+                if system == system2:# or diff < 0:
                     table[system][system2] = "--"
                 else:
                     statsymbol = ""
@@ -48,7 +48,7 @@ def generate_head_to_head(data):
 
         print('\\begin{table*}[h]', file=filehandle)
         print('\\centering', file=filehandle)
-        print('\\small', file=filehandle)
+        print('\\tiny', file=filehandle)
         # Generate column specification with vertical lines between clusters
         col_spec = 'r|'
         for i in range(len(systems)):
