@@ -107,9 +107,11 @@ def main(argv):
             if system_id in autoranks[lp].index:
                 return autoranks[lp].loc[system_id, column]
             
-            return None
-            
+            return None            
         avg_rating['AutoRank'] = avg_rating['system_id'].apply(lambda x: get_autorank(x)).round(1)
+        avg_rating['metricx'] = avg_rating['system_id'].apply(lambda x: get_autorank(x, column='metricx')).round(1)
+        avg_rating['cometkiwi'] = avg_rating['system_id'].apply(lambda x: get_autorank(x, column='cometkiwi')).round(1)
+
         avg_rating['track'] = avg_rating['system_id'].apply(lambda x: get_autorank(x, 'type'))
         avg_rating['track'] = avg_rating['track'].fillna('closed-system')
         avg_rating['lp_supported'] = avg_rating['system_id'].apply(lambda x: get_autorank(x, 'lp_supported'))

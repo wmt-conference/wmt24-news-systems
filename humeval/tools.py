@@ -316,6 +316,8 @@ def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_dom
     content = f"{rank} & {sysname} & {row['overall']:.1f} & {autorank}"
 
     if len(domains) > 0:
+        content += f" & {row[f'cometkiwi']:.1f} & {row[f'metricx']:.1f}"
+
         for domain in domains:
             # mark scores that are out of order
             mark = ''
@@ -354,15 +356,15 @@ def generate_table(df, lp, latex_file, extended=False):
         for column in df.columns:
             if column.startswith('domain_'):
                 domains.append(column.replace('domain_', ''))
-        print(f"\\begin{{tabular}}{{clcc|{len(domains)*'r'}}}", file=latex_file)
-        print(f"Rank & System & Human & AutoRank & {' & '.join(domains)}\\\\", file=latex_file)
+        print(f"\\begin{{tabular}}{{clcc|cc|{len(domains)*'r'}}}", file=latex_file)
+        print(f"Rank & System & Human & AutoRank & CometKiwi & MetricX & {' & '.join(domains)}\\\\", file=latex_file)
     else:
         print("\\begin{tabular}{clcc}", file=latex_file)
         print("Rank & System & Human & AutoRank \\\\", file=latex_file)
     print("\\toprule", file=latex_file)
     last_cluster = 1
     last_domains = {}
-    for index, row in df.iterrows():
+    for _, row in df.iterrows():
         latex_row, cluster, last_domains = generate_latex_row(row, row['track'], row['lp_supported'], domains, last_domains)
         if cluster > last_cluster:
             print("\\midrule", file=latex_file)
