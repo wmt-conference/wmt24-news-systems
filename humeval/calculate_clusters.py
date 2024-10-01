@@ -135,10 +135,10 @@ def main(argv):
 
     print(f"Total clusters: {total_cluster}")
 
-    generate_latex_tables(results)
-    generate_latex_tables(results_extended, extended=True)
+    # generate_latex_tables(results)
+    # generate_latex_tables(results_extended, extended=True)
 
-    generate_max_per_domain(results)
+    # generate_max_per_domain(results)
     generate_head_to_head(head_to_head)
     
         

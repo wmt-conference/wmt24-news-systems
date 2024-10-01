@@ -47,10 +47,15 @@ def generate_head_to_head(data):
                         statsymbol = "$\\star$"                        
                     table[system][system2] = f"{diff:.1f}{statsymbol}"
         
-
-        print('\\begin{table*}[h]', file=filehandle)
-        print('\\centering', file=filehandle)
-        print('\\tiny', file=filehandle)
+        
+        print(r'\begin{table*}[h]', file=filehandle)
+        print(r'\raggedright', file=filehandle)
+        print('{\\bf\\small Head to head comparison for %s systems}' % lp.replace("-", r"$\rightarrow$"), file=filehandle)
+        # zouharvi: for page layout alignment
+        if "English-German" in lp or "English-Czech" in lp:
+            print(r'\fontsize{4}{4}\selectfont', file=filehandle)
+        else:
+            print('\\tiny', file=filehandle)
         # Generate column specification with vertical lines between clusters
         col_spec = 'r|'
         for i in range(len(systems)):
@@ -91,6 +96,4 @@ def generate_head_to_head(data):
         print(scores_row, file=filehandle)
         
         print('\\end{tabular}', file=filehandle)
-        print('\\vspace{5mm}', file=filehandle)
-        print('\\caption{Head to head comparison for %s systems}' % lp, file=filehandle)
         print('\\end{table*}\n\n', file=filehandle)

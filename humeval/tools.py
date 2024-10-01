@@ -380,7 +380,7 @@ def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_dom
 
 def generate_table(df, lp, latex_file, extended=False):
     df['AutoRank'] = df['AutoRank'].fillna('-')
-    print(f'{{\\bf{{{lp}}}}}\\\\', file=latex_file)
+    print(f'{{\\bf{{{lp.replace("-", r"$\rightarrow$")}}}}}\\\\', file=latex_file)
     domains = []
     if extended:
         for column in df.columns:
@@ -419,6 +419,9 @@ def generate_latex_tables(results, extended=False):
         print("\\small", file=latex_file)
         generate_table(table, lp, latex_file, extended)
         if extended:
+            # zouharvi: remove tiny extra space after this table for paper layout
+            if "English-Czech" in lp:
+                print("\\vspace{-1mm}", file=latex_file)
             print("\\end{table*}\n\n", file=latex_file)
         else:
             print("\\end{table}\n\n", file=latex_file)
