@@ -2,7 +2,7 @@ import pandas as pd
 import ipdb
 import os
 from absl import flags, app
-from tools import load_data, get_pvalues, get_ranks, generate_latex_tables, attach_resources
+from tools import load_data, get_pvalues, get_ranks, generate_latex_tables, attach_resources, get_clusters
 from tables import generate_max_per_domain, generate_head_to_head
 
 flags.DEFINE_bool('micro', False, 'Calculate micro average instead of macro over domains?')
@@ -79,21 +79,13 @@ def main(argv):
 
         pvalues = get_pvalues(df_lp, not FLAGS.micro)
         ranks, wins, losses = get_ranks(pvalues, avg_rating)
+        clusters = get_clusters(pvalues, avg_rating)
+
         
         # merge ave_rating and ranks
         avg_rating['rank'] = avg_rating['system_id'].apply(lambda x: ranks[x])
         avg_rating['wins/losses'] = avg_rating['system_id'].apply(lambda x: f"{wins[x]}/{losses[x]}")
-        avg_rating['cluster'] = 0
-                    
-        current_cluster = 1
-        max_cutoff = 1
-        for index, row in avg_rating.iterrows():
-            position = row['position_overall']
-            if position > max_cutoff:
-                current_cluster += 1
-            avg_rating.at[index, 'cluster'] = current_cluster
-
-            max_cutoff = max(max_cutoff, row['rank'][1])
+        avg_rating['cluster'] = avg_rating['system_id'].apply(lambda x: clusters[x])
             
         head_to_head[lp_name] = (avg_rating['overall'], pvalues, ranks, avg_rating['cluster'])
 

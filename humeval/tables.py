@@ -33,7 +33,7 @@ def generate_head_to_head(data):
             table[system] = {}
             for system2 in scores.index:
                 diff = scores[system] - scores[system2]
-                if system == system2:# or diff < 0:
+                if system == system2 or diff < 0:
                     table[system][system2] = "--"
                 else:
                     statsymbol = ""
@@ -42,7 +42,7 @@ def generate_head_to_head(data):
                     elif pvalues[system, system2] < 0.01:
                         statsymbol = "$\\dagger$"
                     elif pvalues[system, system2] < 0.05:
-                        statsymbol = "$\\star$"
+                        statsymbol = "$\\star$"                        
                     table[system][system2] = f"{diff:.1f}{statsymbol}"
         
 

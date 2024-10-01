@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from itertools import combinations
 import scipy.stats as stats
+from scipy.stats import chi2
 from scipy.stats import wilcoxon, mannwhitneyu
 
 import warnings
@@ -242,10 +243,16 @@ def weighted_wilcoxon_signed_rank_test(df, x, y, macro_avg=True):
         differences = (subdf[x] - subdf[y]).to_list()
         pvalues.append(wilcoxon(differences, alternative="two-sided").pvalue)
 
+    # inverse variance weighting
+    # z_scores = np.array([stats.norm.ppf(1 - p) for p in pvalues])
+    # variances = np.ones_like(z_scores)
+    # weights = 1 / variances
+    # combined_z_score = np.sum(weights * z_scores) / np.sqrt(np.sum(weights**2))
+    # return 2 * (1 - stats.norm.cdf(abs(combined_z_score)))
+    
     # Stouffer's Z-score Method
     z_scores = [stats.norm.ppf(1 - p) for p in pvalues]
-    weights = np.ones(len(pvalues))
-    combined_z_score = np.sum(weights * z_scores) / np.sqrt(np.sum(weights ** 2))
+    combined_z_score = np.sum(z_scores) / np.sqrt(len(pvalues))
     pvalue = 1 - stats.norm.cdf(combined_z_score)
     return pvalue
 
@@ -277,15 +284,17 @@ def get_pvalues(df, macro_avg=True):
 
 
 def get_ranks(pvalues, df):
-    systems = df['system_id'].unique()
+    systems = df['system_id']
     wins = {}
     losses = {}
     ranks = {}
+    
     for system1 in systems:
         wins[system1] = 0
         losses[system1] = 0
+
         for system2 in systems:
-            if system1 == system2:
+            if system1 == system2:                
                 continue
             
             if pvalues[(system1, system2)] < ALPHA_THRESHOLD:
@@ -299,6 +308,27 @@ def get_ranks(pvalues, df):
         ranks[system1] = (top_rank, worst_rank)
 
     return ranks, wins, losses
+
+def get_clusters(pvalues, df):
+    # this assume that df is sorted by overall score
+    clusters = {}
+    same_cluster_until_system = -1
+    last_cluster = 1
+    for sys1 in range(len(df)):
+        system1 = df.iloc[sys1]['system_id']
+        if same_cluster_until_system <= sys1:
+            same_cluster_until_system = -1
+
+        for sys2 in range(sys1+1, len(df)):
+            system2 = df.iloc[sys2]['system_id']
+            if pvalues[(system1, system2)] > ALPHA_THRESHOLD:
+                same_cluster_until_system = max(sys2, same_cluster_until_system)
+                    
+        clusters[system1] = last_cluster
+        if same_cluster_until_system == -1:
+            last_cluster += 1
+               
+    return clusters
 
 
 def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_domains={}):
@@ -367,7 +397,7 @@ def generate_table(df, lp, latex_file, extended=False):
     for _, row in df.iterrows():
         latex_row, cluster, last_domains = generate_latex_row(row, row['track'], row['lp_supported'], domains, last_domains)
         if cluster > last_cluster:
-            print("\\midrule", file=latex_file)
+            print("\\cmidrule{1-3}", file=latex_file)
             last_cluster = cluster
         print(latex_row, file=latex_file)
     print("\\bottomrule", file=latex_file)
