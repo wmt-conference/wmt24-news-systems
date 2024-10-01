@@ -8,8 +8,7 @@ def generate_max_per_domain(results):
         lp_name = lp.split(' ')[0]
         if lp_name == "Czech-Ukrainian" or "German" in lp_name or "Japanese-Chinese" in lp_name:
             continue
-        lang1, lang2 = lp_name.split("-")
-        lp_name = f"\\tto{{{lang1}}}{{{lang2}}}"
+        lp_name = lp_name.replace("-", r"$\rightarrow$")
         max_per_domain[lp_name] = {}
         for domain in [d for d in results[lp].columns if d.startswith('domain_')]:
             domainname = domain.split('_')[1]
@@ -19,7 +18,12 @@ def generate_max_per_domain(results):
     # column average
     df.loc['Average'] = df.mean(axis=0)
 
-    df.to_latex('tables/max_per_lp_per_domains.tex', float_format="%.1f")
+    df.to_latex(
+        'tables/max_per_lp_per_domains.tex',
+        float_format="%.1f",
+        column_format=r"l>{\hspace{-2mm}}rrrrr",
+        escape=False,
+    )
 
 
 def generate_head_to_head(data):
