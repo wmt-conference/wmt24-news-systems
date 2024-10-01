@@ -386,7 +386,7 @@ def generate_table(df, lp, latex_file, extended=False):
         for column in df.columns:
             if column.startswith('domain_'):
                 domains.append(column.replace('domain_', ''))
-        print(f"\\begin{{tabular}}{{C{{8mm}}L{{26mm}}C{{11mm}}C{{12mm}}C{{13mm}}C{{12mm}}{len(domains)*'R{9mm}'}}}", file=latex_file)
+        print(f"\\begin{{tabular}}{{C{{8mm}}L{{26mm}}C{{9mm}}C{{11mm}}C{{11mm}}C{{9mm}}{len(domains)*'R{8mm}'}}}", file=latex_file)
         print(f"Rank & System & Human & AutoRank & CometKiwi & MetricX & {' & '.join(domains)}\\\\", file=latex_file)
     else:
         print("\\begin{tabular}{C{8mm}L{26mm}C{11mm}C{12mm}}", file=latex_file)
