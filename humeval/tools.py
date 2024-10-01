@@ -346,26 +346,29 @@ def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_dom
     content = f"{rank} & {sysname} & {row['overall']:.1f} & {autorank}"
 
     if len(domains) > 0:
+        collect_domain_values = []
+        for domain in domains:
+            collect_domain_values.append(row[f'domain_{domain}'])
+        domain_mean_std = (np.mean(collect_domain_values), np.std(collect_domain_values))
         content += f" & {row[f'cometkiwi']:.1f} & {row[f'metricx']:.1f}"
 
         for domain in domains:
-            # mark scores that are out of order
-            mark = ''
+            value = f"{row[f'domain_{domain}']:.1f}"
+            if value == 'nan':
+                content += f" & -"
+                continue
             if domain in last_domains and last_domains[domain] < row[f'domain_{domain}']:
-                mark += "$\\wr$"
+                value = f"\\underline{{{value}}}"
 
-            # if row[f"position_{domain}"] < row["position_overall"] - 3:
-            #     mark += "$\\Uparrow$"
-            # elif row[f"position_{domain}"] < row["position_overall"] - 1:
-            #     mark += "$\\wedge$"
-            # elif row[f"position_{domain}"] > row["position_overall"] + 3:
-            #     mark += "$\\Downarrow$"
-            # elif row[f"position_{domain}"] > row["position_overall"] + 1:
-            #     mark += "$\\vee$"
-
+            diff_to_mean = float(row[f'domain_{domain}'])-domain_mean_std[0]
+            if diff_to_mean < -domain_mean_std[1]:
+                value = f"$\\downarrow$ {value}"
+            if diff_to_mean > domain_mean_std[1]:
+                value = f"$\\uparrow$ {value}"
+                            
             last_domains[domain] = row[f'domain_{domain}']
             
-            content += f" & {mark} {row[f'domain_{domain}']:.1f}"
+            content += f" & {value}"
                 
     if row_type == 'closed-system':
         content = f"\\closedtrack{{{content}}} \\\\"
@@ -386,7 +389,7 @@ def generate_table(df, lp, latex_file, extended=False):
         for column in df.columns:
             if column.startswith('domain_'):
                 domains.append(column.replace('domain_', ''))
-        print(f"\\begin{{tabular}}{{C{{8mm}}L{{26mm}}C{{9mm}}C{{11mm}}C{{11mm}}C{{9mm}}{len(domains)*'R{8mm}'}}}", file=latex_file)
+        print(f"\\begin{{tabular}}{{C{{8mm}}L{{30mm}}C{{9mm}}C{{11mm}}C{{11mm}}C{{9mm}}{len(domains)*'R{10mm}'}}}", file=latex_file)
         print(f"Rank & System & Human & AutoRank & CometKiwi & MetricX & {' & '.join(domains)}\\\\", file=latex_file)
     else:
         print("\\begin{tabular}{C{8mm}L{26mm}C{11mm}C{12mm}}", file=latex_file)
