@@ -8,6 +8,8 @@ def generate_max_per_domain(results):
         lp_name = lp.split(' ')[0]
         if lp_name == "Czech-Ukrainian" or "German" in lp_name or "Japanese-Chinese" in lp_name:
             continue
+        lang1, lang2 = lp_name.split("-")
+        lp_name = f"\\tto{{{lang1}}}{{{lang2}}}"
         max_per_domain[lp_name] = {}
         for domain in [d for d in results[lp].columns if d.startswith('domain_')]:
             domainname = domain.split('_')[1]

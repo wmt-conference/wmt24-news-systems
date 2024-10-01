@@ -386,12 +386,12 @@ def generate_table(df, lp, latex_file, extended=False):
         for column in df.columns:
             if column.startswith('domain_'):
                 domains.append(column.replace('domain_', ''))
-        print(f"\\begin{{tabular}}{{clcc|cc|{len(domains)*'r'}}}", file=latex_file)
+        print(f"\\begin{{tabular}}{{C{{8mm}}L{{26mm}}C{{11mm}}C{{12mm}}C{{13mm}}C{{12mm}}{len(domains)*'R{9mm}'}}}", file=latex_file)
         print(f"Rank & System & Human & AutoRank & CometKiwi & MetricX & {' & '.join(domains)}\\\\", file=latex_file)
     else:
-        print("\\begin{tabular}{clcc}", file=latex_file)
+        print("\\begin{tabular}{C{8mm}L{26mm}C{11mm}C{12mm}}", file=latex_file)
         print("Rank & System & Human & AutoRank \\\\", file=latex_file)
-    print("\\toprule", file=latex_file)
+    print("\\midrule", file=latex_file)
     last_cluster = 1
     last_domains = {}
     for _, row in df.iterrows():
