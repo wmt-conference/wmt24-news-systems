@@ -114,7 +114,7 @@ def main(argv):
 
         total_cluster += avg_rating['cluster'].max()
 
-        lp_name = f"{lp_name} ({avg_annotations_per_system:0.0f} segments per system)"
+        lp_name = f"{lp_name}"
         results[lp_name] = avg_rating
 
         # add data not used in human evaluation
