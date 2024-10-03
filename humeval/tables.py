@@ -53,7 +53,7 @@ def generate_head_to_head(data):
         
         
         print(r'\begin{table*}[h]', file=filehandle)
-        print(r'\raggedright', file=filehandle)
+        print(r'\centering', file=filehandle) # let's keep it in center
         print('{\\bf\\small Head to head comparison for %s systems}' % lp.replace("-", r"$\rightarrow$"), file=filehandle)
         # zouharvi: for page layout alignment
         if "English-German" in lp or "English-Czech" in lp:
