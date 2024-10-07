@@ -392,7 +392,7 @@ def generate_table(df, lp, latex_file, extended=False):
         print(f"\\begin{{tabular}}{{C{{8mm}}L{{25mm}}C{{9mm}}C{{10mm}}C{{11mm}}C{{9mm}}{len(domains)*'R{8mm}'}}}", file=latex_file)
         print(f"Rank & System & Human & AutoRank & CometKiwi & MetricX & {' & '.join(domains)}\\\\", file=latex_file)
     else:
-        print("\\begin{tabular}{C{8mm}L{26mm}C{11mm}C{12mm}}", file=latex_file)
+        print("\\begin{tabular}{C{8mm}L{30mm}C{9mm}C{10mm}}", file=latex_file)
         print("Rank & System & Human & AutoRank \\\\", file=latex_file)
     print("\\midrule", file=latex_file)
     last_cluster = 1
