@@ -3,7 +3,8 @@ import ipdb
 import os
 from absl import flags, app
 from tools import load_data, get_pvalues, get_ranks, generate_latex_tables, attach_resources, get_clusters
-from tables import generate_max_per_domain, generate_head_to_head
+from tables import generate_max_per_domain, generate_head_to_head, generate_online_llm_head_to_head_wins
+
 
 flags.DEFINE_bool('micro', False, 'Calculate micro average instead of macro over domains?')
 flags.DEFINE_bool('preload', False, 'Use pickle file?')
@@ -25,6 +26,8 @@ language_mapping = {
 
 
 def main(argv):
+    if not os.path.exists('tables'):
+        os.makedirs('tables')
 
     if FLAGS.preload and os.path.exists('data.pkl'):
         df = pd.read_pickle('data.pkl')
@@ -140,8 +143,9 @@ def main(argv):
 
     generate_max_per_domain(results)
     generate_head_to_head(head_to_head)
+    generate_online_llm_head_to_head_wins(head_to_head, results_extended)
+
     
-        
 
 if __name__ == '__main__':
     app.run(main)

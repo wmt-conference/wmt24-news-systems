@@ -383,7 +383,8 @@ def generate_latex_row(row, row_type=None, supported="Yes", domains=[], last_dom
 
 def generate_table(df, lp, latex_file, extended=False):
     df['AutoRank'] = df['AutoRank'].fillna('-')
-    print(f'{{\\bf{{{lp.replace("-", r"$\rightarrow$")}}}}}\\\\', file=latex_file)
+    formatted_string = lp.replace("-", r"$\rightarrow$")
+    print(f'{{\\bf{{{formatted_string}}}}}\\\\', file=latex_file)
     domains = []
     if extended:
         for column in df.columns:
