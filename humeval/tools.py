@@ -175,6 +175,11 @@ def load_data(filename, only_paired=False, is_mqm=False, remove_qc=True):
         df = pd.read_csv(filename, header=None, dtype=str)
         df.columns = ['user_id', 'system_id', 'segment_id', 'segment_type', 'source_lang', 'target_lang', 'overall', 'doc_id', 'unk', 'error_spans', 'start_time', 'end_time']
         df = df.drop(columns=['unk'])
+
+        
+        for index, row in df.iterrows():
+            # this is to remove CANARY string on the first place
+            row['segment_id'] = int(row['segment_id']) - 1
         
         df['source_lang'] = df['source_lang'].apply(lambda x: langcode_mapping[x])
         df['target_lang'] = df['target_lang'].apply(lambda x: langcode_mapping[x])

@@ -33,7 +33,11 @@ def main(argv):
         df = pd.read_pickle('data.pkl')
     else:
         data = []
-        for wave in ['mqm_generalMT2024_ende.tsv', 'mqm_generalMT2024_jazh.tsv', 'wave0.csv', 'wave1.csv', 'wave2.csv', 'wave3.csv']:
+        for wave in [
+            'mqm_generalMT2024_ende.tsv', 'mqm_generalMT2024_jazh.tsv',
+            'esa_generalMT2024_wave0.csv', 'esa_generalMT2024_wave1.csv',
+            'esa_generalMT2024_wave2.csv', 'esa_generalMT2024_wave3.csv'
+        ]:
             data.append(load_data(wave, is_mqm=wave.startswith("mqm")))
 
         # merge data as all waves has the same columns

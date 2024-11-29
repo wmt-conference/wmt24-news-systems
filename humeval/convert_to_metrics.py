@@ -11,7 +11,10 @@ matplotlib.use('Agg')
 original_sources, _, _ = load_all_resources()
 
 data = []
-for wave in ['wave0.csv', 'wave1.csv', 'wave2.csv', 'wave3.csv']:
+for wave in [
+    'esa_generalMT2024_wave0.csv', 'esa_generalMT2024_wave1.csv',
+    'esa_generalMT2024_wave2.csv', 'esa_generalMT2024_wave3.csv'
+]:
     data.append(load_data(wave, is_mqm=False))
 df = pd.concat(data)
 df = attach_resources(df)

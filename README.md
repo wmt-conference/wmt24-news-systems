@@ -11,7 +11,17 @@ Tools for extracting the raw text from the XML can be found [here](https://githu
 
 The human evaluations are in the `humaneval` directory.
 
+## Running the analysis
 
+The scripts and data are self-contained and should be run from within the `humeval` repository. For example:
+```bash
+cd humeval
+
+# system clusters, produces output in humeval/tables
+python3 calculate_clusters.py
+```
+
+## Data dump
 
 The complete compiled data [with this script](https://github.com/wmt-conference/wmt24-news-systems/blob/main/humeval/merge_to_jsonl.py) can also be found in [public JSONL](https://github.com/wmt-conference/wmt24-news-systems/raw/refs/heads/main/jsonl/wmt24_esa.jsonl).
 Note that this format is experimental and bound to change in the future.
@@ -42,3 +52,6 @@ Each line in the data looks as follows:
   }
 }
 ```
+
+Note that until November-29-2024, the ESA data used different indexing (off-by-one) than the MQM data.
+This has been fixed. The new files are `humeval/esa_generalMT2024_wave*.csv` and the old data are `humeval/old/wave*.csv`.
