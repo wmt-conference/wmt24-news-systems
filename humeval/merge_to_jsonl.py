@@ -2,23 +2,7 @@ import csv
 import glob
 import collections
 import json
-import numpy as np
 
-
-LANG_2_TO_3 = {
-    "en": "eng",
-    "de": "deu",
-    "cs": "ces",
-    "hr": "hrv",
-    "pl": "plk",
-    "ru": "rus",
-    "zh": "zho",
-    "ja": "jpn",
-    "es": "spa",
-    "hi": "hin",
-    "is": "isl",
-    "uk": "ukr",
-}
 LANG_3_TO_2 = {
     "eng": "en",
     "deu": "de",
@@ -77,8 +61,9 @@ def load_data_wmt():
             return None
         
         langs = f"{LANG_3_TO_2[lang1]}-{LANG_3_TO_2[lang2]}"
-        # original data is off by one due to initial canary line
-        line_id = int(line_id)+1
+        # # original data is off by one due to initial canary line
+        # line_id = int(line_id)+1
+        line_id = int(line_id)
 
         # make sure the document name matches
         assert data_doc[langs][line_id][1] == document_id
@@ -108,7 +93,7 @@ def load_data_wmt():
         
     data = []
     for wave in range(4):
-        for line in csv.reader(open(f'humeval/wave{wave}.csv')):
+        for line in csv.reader(open(f'humeval/esa_generalMT2024_wave{wave}.csv')):
             data.append(load_line(line))
 
     # remove Nones

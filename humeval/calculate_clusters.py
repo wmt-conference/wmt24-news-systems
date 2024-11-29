@@ -29,8 +29,8 @@ def main(argv):
     if not os.path.exists('tables'):
         os.makedirs('tables')
 
-    if FLAGS.preload and os.path.exists('data.pkl'):
-        df = pd.read_pickle('data.pkl')
+    if FLAGS.preload and os.path.exists('cache.pkl'):
+        df = pd.read_pickle('cache.pkl')
     else:
         data = []
         for wave in [
@@ -44,7 +44,7 @@ def main(argv):
         df = pd.concat(data)
         df = attach_resources(df)
         # save pickle
-        df.to_pickle('data.pkl')
+        df.to_pickle('cache.pkl')
         df.to_csv('full_export.csv')
 
     # if there are multiple ratings for the same segment, average them
