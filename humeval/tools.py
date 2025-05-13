@@ -8,11 +8,18 @@ from itertools import combinations
 import scipy.stats as stats
 from scipy.stats import chi2
 from scipy.stats import wilcoxon, mannwhitneyu
+from itertools import groupby
+import collections
+import re
+import ast
 
 import warnings
 warnings.filterwarnings("ignore", message="Exact p-value calculation does not work if there are zeros")
 warnings.filterwarnings("ignore", message="Sample size too small for normal approximation")
 
+
+def isNaN(num):
+    return num != num
 
 
 ALPHA_THRESHOLD = 0.05
@@ -48,6 +55,44 @@ def mqm_weights(row):
     raise Exception(f"Unknown MQM weights {row}")
 
 
+
+def extract_spans(text):
+    # Extract all spans with their positions and clean the text
+    spans = []
+    clean_text = ""
+    cursor = 0
+    for match in re.finditer(r"<v>(.*?)</v>", text):
+        before = text[cursor:match.start()]
+        span_text = match.group(1)
+        clean_text += before + span_text
+        start = len(clean_text) - len(span_text)
+        end = len(clean_text)
+        spans.append((start, end))
+        cursor = match.end()
+    clean_text += text[cursor:]
+    return clean_text, spans
+
+
+def apply_conversion(row):
+  x = row.to_dict()
+  severity = x['severity']
+  category = x['category']
+  # print(x)
+  if x['severity'] == 'No-error':
+    return f""
+  else:
+    if isNaN(x['target']):
+      return f"{{'start_i': 0, 'end_i': 0, 'severity': '{severity.lower()}', 'error_type': '{category.lower()}'}}"
+    clean_text, spans = extract_spans(x['target'])
+    if x['category'] == 'Accuracy/Omission':
+      spans = [(len(clean_text)+1, len(clean_text)+1+len(['MISSING']))]
+    if not spans:
+      return f"{{'start_i': 0, 'end_i': 0, 'severity': '{severity.lower()}', 'error_type': '{category.lower()}'}}"
+    else:
+      return f"{{'start_i': {spans[0][0]}, 'end_i': {spans[0][1]}, 'severity': '{severity.lower()}', 'error_type': '{category.lower()}'}}"
+
+
+
 def load_mqm(filename):
     df = pd.read_csv(filename, dtype=str, sep='\t', quoting=csv.QUOTE_NONE, quotechar='')
     
@@ -69,7 +114,8 @@ def load_mqm(filename):
     else:
         raise Exception(f"unknown lnaguage pair")        
 
-    df['error_spans'] = df.apply(lambda x: f"{{'severity':{x['severity']}, 'error_type:{x['category']}'}}", axis=1)
+    # df['error_spans'] = df.apply(lambda x: f"{{'severity': '{x['severity']}', 'error_type':'{x['category']}'}}", axis=1)
+    df['error_spans'] = df.apply(apply_conversion, axis=1)
 
     # replace nan in severity column with No-error
     df['severity'] = df['severity'].fillna('No-error')
@@ -77,7 +123,7 @@ def load_mqm(filename):
     df['overall'] = df.apply(lambda x: mqm_weights(x), axis=1)
     df['method'] = "MQM"
 
-    aggregation = {'overall': 'sum', 'error_spans': lambda x: ', '.join(x)}
+    aggregation = {'overall': 'sum', 'error_spans': lambda x: list(ast.literal_eval('[' + ', '.join([t for t in x if t!=""]) + ']'))}
     df = df.groupby(['system_id', 'doc_id', 'segment_id', 'user_id', 'source_lang', 'target_lang', 'method'], as_index=
 False).agg(aggregation)
     # sort by segment_id then by system_id

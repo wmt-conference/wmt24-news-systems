@@ -45,7 +45,7 @@ def main(argv):
         df = attach_resources(df)
         # save pickle
         df.to_pickle('cache.pkl')
-        df.to_csv('full_export.csv')
+        df.to_csv('full_export.csv', index=None)
 
     # if there are multiple ratings for the same segment, average them
     subdf = df.groupby(['annot_id', 'lp', 'system_id', 'orig_segment_id'])
