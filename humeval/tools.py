@@ -87,6 +87,7 @@ def apply_conversion(row):
     if x['category'] == 'Accuracy/Omission':
       spans = [(len(clean_text)+1, len(clean_text)+1+len(['MISSING']))]
     if not spans:
+      # source error and other category dont mark target span
       return f"{{'start_i': 0, 'end_i': 0, 'severity': '{severity.lower()}', 'error_type': '{category.lower()}'}}"
     else:
       return f"{{'start_i': {spans[0][0]}, 'end_i': {spans[0][1]}, 'severity': '{severity.lower()}', 'error_type': '{category.lower()}'}}"
