@@ -2,6 +2,9 @@ import csv
 import glob
 import collections
 import json
+import ipdb
+import pandas as pd
+
 
 LANG_3_TO_2 = {
     "eng": "en",
@@ -19,16 +22,16 @@ LANG_3_TO_2 = {
 }
 
 def load_data_wmt():
-    langs_all = [x.split("/")[-1].removesuffix(".txt") for x in glob.glob("txt/sources/*.txt")]
+    langs_all = [x.split("/")[-1].removesuffix(".txt") for x in glob.glob("../txt/sources/*.txt")]
     data_src = {}
     data_doc = {}
     data_tgt = collections.defaultdict(dict)
     for langs in langs_all:
-        data_src[langs] = list(open(f"txt/sources/{langs}.txt").read().splitlines())
-        data_doc[langs] = list(open(f"txt/documents/{langs}.docs").read().splitlines())
+        data_src[langs] = list(open(f"../txt/sources/{langs}.txt").read().splitlines())
+        data_doc[langs] = list(open(f"../txt/documents/{langs}.docs").read().splitlines())
         data_doc[langs] = [x.split("\t") for x in data_doc[langs]]
 
-        for system_f in list(glob.glob(f"txt/system-outputs/{langs}/*.txt"))+list(glob.glob(f"txt/references/{langs}.*.txt")):
+        for system_f in list(glob.glob(f"../txt/system-outputs/{langs}/*.txt"))+list(glob.glob(f"../txt/references/{langs}.*.txt")):
             system = system_f.split("/")[-1].removesuffix(".txt")
             system = system.removeprefix(langs + ".")
             data_tgt[langs][system] = list(open(system_f).read().splitlines())
@@ -60,6 +63,7 @@ def load_data_wmt():
         if "-tutorial" in document_id:
             return None
         
+        
         langs = f"{LANG_3_TO_2[lang1]}-{LANG_3_TO_2[lang2]}"
         # # original data is off by one due to initial canary line
         # line_id = int(line_id)+1
@@ -86,6 +90,7 @@ def load_data_wmt():
             "domain": data_doc[langs][line_id][0],
             "esa_spans": json.loads(esa_spans),
             "esa_score": esa_score,
+            "times": [_time_start, _time_end],
             "system": system,
             "annotator": user_id,
             "speech_info": speech_info,
@@ -93,7 +98,7 @@ def load_data_wmt():
         
     data = []
     for wave in range(4):
-        for line in csv.reader(open(f'humeval/esa_generalMT2024_wave{wave}.csv')):
+        for line in csv.reader(open(f'esa_generalMT2024_wave{wave}.csv')):
             data.append(load_line(line))
 
     # remove Nones
@@ -103,8 +108,60 @@ def load_data_wmt():
 
     return data
 
+def convert_to_unified_format(data, filename):
+    # load file annotator_mapping.json
+    with open("annotator_mapping.json") as fh:
+        annot_map = json.load(fh)
+    ann_map = {v: k for k, vs in annot_map.items() for v in vs}
+
+
+
+    df = pd.DataFrame(data)
+    # each segment in final output contains f"{doc_id}_#_{line_id}"
+    df['doc_id'] = df.apply(lambda x: f"{x['doc_id']}_#_{x['line_id']}", axis=1)
+    del df['line_id']
+
+    data = []
+    for doc_id, group in df.groupby(by='doc_id'):
+        src_text = group['src'].unique()
+        assert len(src_text) == 1, "There are differences in source text"
+        src_text = src_text[0]
+
+        # sort group by esa_score so better system is first
+        group = group.sort_values(by="esa_score")
+
+        tgt_text = group[['tgt', 'system']].drop_duplicates().set_index('system').to_dict()['tgt']
+
+        scores = {}
+        for systemid, sys_group in group.groupby(by='system'):
+            human_scores = []
+            for _, row in sys_group.iterrows():
+                human_scores.append({
+                    "score": row['esa_score'],
+                    "annotator": ann_map[row['annotator']],
+                    "errors": row['esa_spans'],
+                    "times": row['times'],
+                })
+            scores[systemid] = human_scores
+            
+
+        data.append(
+            {
+                "scores": scores,
+                "src_text": src_text,
+                "tgt_text": tgt_text,
+                "doc_id": doc_id
+            }
+        )
+        
+    df = pd.DataFrame(data)
+    df.to_json(filename, force_ascii=False, lines=True, orient="records")
+
+
 if __name__ == '__main__':
     data = load_data_wmt()
+    
+    convert_to_unified_format(data, "../txt/wmt24-genmt-humeval.jsonl")
 
-    with open("jsonl/wmt24_esa.jsonl", "w") as f:
+    with open("../jsonl/wmt24_esa.jsonl", "w") as f:
         f.write("\n".join([json.dumps(line, ensure_ascii=False) for line in data]))
