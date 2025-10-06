@@ -114,18 +114,13 @@ def convert_to_unified_format(data, filename):
         annot_map = json.load(fh)
     ann_map = {v: k for k, vs in annot_map.items() for v in vs}
 
-
-
     df = pd.DataFrame(data)
     # each segment in final output contains f"{doc_id}_#_{line_id}"
-    df['doc_id'] = df.apply(lambda x: f"{x['doc_id']}_#_{x['line_id']}", axis=1)
+    df['doc_id'] = df.apply(lambda x: f"{x['langs']}_#_{x['domain']}_#_{x['doc_id']}_#_{x['line_id']}", axis=1)
     del df['line_id']
 
     data = []
     for doc_id, group in df.groupby(by='doc_id'):
-        lp = group.iloc[0]['langs']
-        domain = group.iloc[0]['domain']
-        new_doc_id = f"{lp}_#_{domain}_#_{doc_id}"
         src_text = group['src'].unique()
         assert len(src_text) == 1, "There are differences in source text"
         src_text = src_text[0]
@@ -144,17 +139,16 @@ def convert_to_unified_format(data, filename):
                     "annotator": ann_map[row['annotator']],
                     "errors": row['esa_spans'],
                     "times": row['times'],
+                    "protocol": "ESA"
                 })
             scores[systemid] = human_scores
-            
 
         data.append(
             {
                 "scores": scores,
                 "src_text": src_text,
                 "tgt_text": tgt_text,
-                "doc_id": new_doc_id,
-                "orig_doc_id": doc_id
+                "doc_id": doc_id,
             }
         )
         
@@ -164,7 +158,6 @@ def convert_to_unified_format(data, filename):
 
 if __name__ == '__main__':
     data = load_data_wmt()
-    
     convert_to_unified_format(data, "../jsonl/wmt24-genmt-humeval.jsonl")
 
     with open("../jsonl/wmt24_esa_original.jsonl", "w") as f:
