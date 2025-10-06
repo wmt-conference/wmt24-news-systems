@@ -137,7 +137,7 @@ def convert_to_unified_format(data, filename):
             human_scores = []
             for _, row in sys_group.iterrows():
                 human_scores.append({
-                    "score": row['esa_score'],
+                    "score": float(row['esa_score']),
                     "annotator": ann_map[row['annotator']],
                     "errors": row['esa_spans'],
                     "times": row['times'],
@@ -161,7 +161,7 @@ def convert_to_unified_format(data, filename):
 if __name__ == '__main__':
     data = load_data_wmt()
     
-    convert_to_unified_format(data, "../txt/wmt24-genmt-humeval.jsonl")
+    convert_to_unified_format(data, "../jsonl/wmt24-genmt-humeval.jsonl")
 
-    with open("../jsonl/wmt24_esa.jsonl", "w") as f:
+    with open("../jsonl/wmt24_esa_original.jsonl", "w") as f:
         f.write("\n".join([json.dumps(line, ensure_ascii=False) for line in data]))
