@@ -123,6 +123,9 @@ def convert_to_unified_format(data, filename):
 
     data = []
     for doc_id, group in df.groupby(by='doc_id'):
+        lp = group.iloc[0]['langs']
+        domain = group.iloc[0]['domain']
+        new_doc_id = f"{lp}_#_{domain}_#_{doc_id}"
         src_text = group['src'].unique()
         assert len(src_text) == 1, "There are differences in source text"
         src_text = src_text[0]
@@ -150,7 +153,8 @@ def convert_to_unified_format(data, filename):
                 "scores": scores,
                 "src_text": src_text,
                 "tgt_text": tgt_text,
-                "doc_id": doc_id
+                "doc_id": new_doc_id,
+                "orig_doc_id": doc_id
             }
         )
         
